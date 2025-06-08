@@ -9,6 +9,8 @@ camera.position.set(0, 2, 5);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+renderer.shadowMap.enabled = true;
+
 
 // Controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -20,12 +22,63 @@ controls.update();
 // Lighting
 const ambient = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambient);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1.5);
+directionalLight.position.set(5, 10, 7.5); // (x, y, z)
+directionalLight.castShadow = true;
+directionalLight.shadow.mapSize.width = 1024;
+directionalLight.shadow.mapSize.height = 1024;
+directionalLight.shadow.camera.near = 0.5;
+directionalLight.shadow.camera.far = 50;
+scene.add(directionalLight);
+const hemiLight = new THREE.HemisphereLight(0xffffbb, 0x080820, 0.6);
+scene.add(hemiLight);
+
 
 // Load the street world
 const loader = new GLTFLoader();
-loader.load('assets/world.glb', gltf => {
+loader.load('assets/treeshroom.glb', gltf => {
+  gltf.scene.traverse(child => {
+    if (child.isMesh) {
+      child.castShadow = true;
+      child.receiveShadow = true;
+    }
+  });
   scene.add(gltf.scene);
 });
+
+// Sky
+const skyGeo = new THREE.SphereGeometry(500, 32, 15);
+const skyMat = new THREE.ShaderMaterial({
+  side: THREE.BackSide,
+  uniforms: {
+    topColor: { value: new THREE.Color(0xfff1c1) },     // peachy top
+    bottomColor: { value: new THREE.Color(0xb0d9ff) },  // soft blue
+    offset: { value: 33 },
+    exponent: { value: 0.6 }
+  },
+  vertexShader: `
+    varying vec3 vWorldPosition;
+    void main() {
+      vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+      vWorldPosition = worldPosition.xyz;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform vec3 topColor;
+    uniform vec3 bottomColor;
+    uniform float offset;
+    uniform float exponent;
+    varying vec3 vWorldPosition;
+    void main() {
+      float h = normalize(vWorldPosition + offset).y;
+      gl_FragColor = vec4(mix(bottomColor, topColor, max(pow(max(h, 0.0), exponent), 0.0)), 1.0);
+    }
+  `
+});
+const sky = new THREE.Mesh(skyGeo, skyMat);
+scene.add(sky);
+
 
 // Load and animate robot
 // let robot;
