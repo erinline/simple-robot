@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>3D Force Graph</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>3D Interaction Graph</title>
   <style>
-    body { margin: 0; }
     canvas { display: block; }
     #tooltip {
       position: absolute;
@@ -15,23 +15,62 @@
       pointer-events: none;
       display: none;
     }
-    #score {
+    #interaction_style {
         position: fixed;
-        top: 10px;
-        left: 10px;
+        top: 12px;
+        left: 12px;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        padding: 6px 10px;
-        border-radius: 4px;
+        padding: 8px 10px;
+        border-radius: 8px;
         font-family: sans-serif;
         font-size: 16px;
         z-index: 1000;
     }
+
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #3d-graph {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    #home-link {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        font-size: 28px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: black;
+        text-decoration: none;
+        z-index: 1000;
+        transition: background 0.2s ease;
+    }
+
+    #home-link:hover {
+        background: rgba(200, 200, 255, 0.95);
+    }
+
   </style>
 </head>
 <body>
+  <div id="home-link">
   <div id="interaction_style">Style: 0</div>
+    <a href="index.html" title="Return to Main View">
+      <span class="material-symbols-outlined">deployed_code</span>
+    </a>
+  </div>
   <div id="tooltip"></div>
+  <div id="3d-graph"></div>
   <script src="https://unpkg.com/3d-force-graph"></script>
   <script type="module" src="graph.js"></script>
 </body>

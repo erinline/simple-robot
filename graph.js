@@ -10,32 +10,45 @@ const colorMap = {
 };
 
 
-const Graph = ForceGraph3D()
-  (document.body)
-  .jsonUrl('../assets/samplenodes.json')
-  .linkDirectionalArrowLength(4)
-  .linkDirectionalArrowRelPos(1)
-  .linkDirectionalParticles("value")
-  .linkDirectionalParticleSpeed(d => 0.001)
-  .linkColor(link => colorMap[link.value])
-  .nodeLabel(node => node.id)
-  .onNodeHover(node => {
-    if (node) {
-      const connections = Graph.graphData().links
-        .filter(l => l.source.id === node.id)
-        .map(l => l.target.id);
-      tooltip.innerHTML = `<strong>${node.id}</strong><br>→ ${connections.join(', ')}`;
-      tooltip.style.display = 'block';
-    } else {
-      tooltip.style.display = 'none';
-    }
+fetch('../assets/samplenodes.json')
+  .then(res => res.json())
+  .then(data => {
+    const Graph = ForceGraph3D()
+      (document.getElementById('3d-graph'))
+      .graphData(data)
+      .linkDirectionalArrowLength(4)
+      .linkDirectionalArrowRelPos(1)
+      .linkDirectionalParticles("value")
+      .linkDirectionalParticleSpeed(d => 0.001)
+      .linkColor(link => colorMap[link.value])
+      .nodeLabel(node => node.id)
+      .onNodeHover(node => {
+        if (node) {
+          const connections = data.links
+            .filter(l => l.source === node.id)
+            .map(l => l.target);
+          tooltip.innerHTML = `<strong>${node.id}</strong><br>→ ${connections.join(', ')}`;
+          tooltip.style.display = 'block';
+        } else {
+          tooltip.style.display = 'none';
+        }
+      });
+
+    const bloomPass = new UnrealBloomPass();
+    bloomPass.strength = 2;
+    bloomPass.radius = 1;
+    bloomPass.threshold = 0;
+    Graph.postProcessingComposer().addPass(bloomPass);
+    const sum = data.links.reduce((acc, link) => acc + link.value, 0);
+    const avg = (sum / data.links.length).toFixed(0);
+    document.getElementById('interaction_style').textContent = `Style: ${avg}`;
+    const avgValue = Math.round(avg); // Convert 2.13 -> 2
+    const mappedColor = colorMap[avgValue] || 'black'; // fallback if not 1–4
+
+    const el = document.getElementById('interaction_style');
+    el.style.color = mappedColor;
   });
 
-const bloomPass = new UnrealBloomPass();
-bloomPass.strength = 2;
-bloomPass.radius = 1;
-bloomPass.threshold = 0;
-Graph.postProcessingComposer().addPass(bloomPass);
 
 // Make tooltip follow the mouse
 document.addEventListener('mousemove', (event) => {
