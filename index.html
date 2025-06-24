@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <title>Little World Demo</title>
-  <style> body { margin: 0; overflow: hidden; } </style>
+  <style> 
+    body { margin: 0; overflow: hidden; } 
+
+    #graph-link {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        font-size: 28px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 8px 10px;
+        border-radius: 8px;
+        color: black;
+        text-decoration: none;
+        z-index: 1000;
+        transition: background 0.2s ease;
+    }
+
+    #graph-link:hover {
+        background: rgba(200, 200, 255, 0.95);
+    }
+  </style>
 </head>
 <body>
+    <a id="graph-link" href="graph.html" title="View Network Graph">
+        <span class="material-symbols-outlined">graph_3</span>
+    </a>
   <script type="module" src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>3D Force Graph</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    #tooltip {
+      position: absolute;
+      background: white;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      pointer-events: none;
+      display: none;
+    }
+    #score {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-family: sans-serif;
+        font-size: 16px;
+        z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <div id="interaction_style">Style: 0</div>
+  <div id="tooltip"></div>
+  <script src="https://unpkg.com/3d-force-graph"></script>
+  <script type="module" src="graph.js"></script>
+</body>
+</html>

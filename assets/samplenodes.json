@@ -1,0 +1,6740 @@
+{
+  "nodes": [
+    {
+      "id": "witty river",
+      "group": 2
+    },
+    {
+      "id": "sleepy pecan",
+      "group": 2
+    },
+    {
+      "id": "curious oak",
+      "group": 3
+    },
+    {
+      "id": "nimble badger",
+      "group": 3
+    },
+    {
+      "id": "shiny stone",
+      "group": 4
+    },
+    {
+      "id": "nimble maple",
+      "group": 1
+    },
+    {
+      "id": "swift oak",
+      "group": 4
+    },
+    {
+      "id": "sly cloud",
+      "group": 4
+    },
+    {
+      "id": "nimble acorn",
+      "group": 1
+    },
+    {
+      "id": "quiet beetle",
+      "group": 1
+    },
+    {
+      "id": "wild pecan",
+      "group": 2
+    },
+    {
+      "id": "brave feather",
+      "group": 4
+    },
+    {
+      "id": "lucky sun",
+      "group": 1
+    },
+    {
+      "id": "sneaky fern",
+      "group": 3
+    },
+    {
+      "id": "sneaky acorn",
+      "group": 3
+    },
+    {
+      "id": "nimble stone",
+      "group": 3
+    },
+    {
+      "id": "sneaky badger",
+      "group": 3
+    },
+    {
+      "id": "shiny sun",
+      "group": 1
+    },
+    {
+      "id": "brave fern",
+      "group": 4
+    },
+    {
+      "id": "sleepy river",
+      "group": 2
+    },
+    {
+      "id": "lucky acorn",
+      "group": 2
+    },
+    {
+      "id": "nimble fox",
+      "group": 2
+    },
+    {
+      "id": "fuzzy acorn",
+      "group": 1
+    },
+    {
+      "id": "sly acorn",
+      "group": 2
+    },
+    {
+      "id": "fuzzy maple",
+      "group": 1
+    },
+    {
+      "id": "sleepy feather",
+      "group": 4
+    },
+    {
+      "id": "sly moss",
+      "group": 4
+    },
+    {
+      "id": "nimble moss",
+      "group": 4
+    },
+    {
+      "id": "happy oak",
+      "group": 3
+    },
+    {
+      "id": "ancient acorn",
+      "group": 2
+    },
+    {
+      "id": "swift acorn",
+      "group": 4
+    },
+    {
+      "id": "sneaky maple",
+      "group": 4
+    },
+    {
+      "id": "lucky willow",
+      "group": 2
+    },
+    {
+      "id": "ancient wind",
+      "group": 3
+    },
+    {
+      "id": "witty badger",
+      "group": 4
+    },
+    {
+      "id": "shiny pecan",
+      "group": 2
+    },
+    {
+      "id": "sly beetle",
+      "group": 4
+    },
+    {
+      "id": "quiet sun",
+      "group": 4
+    },
+    {
+      "id": "gentle stone",
+      "group": 4
+    },
+    {
+      "id": "fuzzy sun",
+      "group": 2
+    },
+    {
+      "id": "sly maple",
+      "group": 1
+    },
+    {
+      "id": "happy fern",
+      "group": 2
+    },
+    {
+      "id": "shiny maple",
+      "group": 2
+    },
+    {
+      "id": "lucky stone",
+      "group": 4
+    },
+    {
+      "id": "quiet stone",
+      "group": 1
+    },
+    {
+      "id": "sleepy sun",
+      "group": 2
+    },
+    {
+      "id": "lucky badger",
+      "group": 3
+    },
+    {
+      "id": "gentle sun",
+      "group": 1
+    },
+    {
+      "id": "lucky cloud",
+      "group": 4
+    },
+    {
+      "id": "curious badger",
+      "group": 4
+    },
+    {
+      "id": "sleepy wind",
+      "group": 2
+    },
+    {
+      "id": "quiet willow",
+      "group": 3
+    },
+    {
+      "id": "gentle willow",
+      "group": 1
+    },
+    {
+      "id": "sneaky oak",
+      "group": 2
+    },
+    {
+      "id": "witty oak",
+      "group": 1
+    },
+    {
+      "id": "sly badger",
+      "group": 2
+    },
+    {
+      "id": "nimble fern",
+      "group": 4
+    },
+    {
+      "id": "sleepy beetle",
+      "group": 3
+    },
+    {
+      "id": "ancient sun",
+      "group": 3
+    },
+    {
+      "id": "sneaky cloud",
+      "group": 3
+    },
+    {
+      "id": "lucky river",
+      "group": 1
+    },
+    {
+      "id": "swift willow",
+      "group": 4
+    },
+    {
+      "id": "fuzzy beetle",
+      "group": 4
+    },
+    {
+      "id": "swift stone",
+      "group": 2
+    },
+    {
+      "id": "sleepy fern",
+      "group": 1
+    },
+    {
+      "id": "sly stone",
+      "group": 2
+    },
+    {
+      "id": "sneaky moss",
+      "group": 3
+    },
+    {
+      "id": "curious maple",
+      "group": 3
+    },
+    {
+      "id": "wild acorn",
+      "group": 2
+    },
+    {
+      "id": "ancient beetle",
+      "group": 3
+    },
+    {
+      "id": "ancient feather",
+      "group": 2
+    },
+    {
+      "id": "nimble river",
+      "group": 4
+    },
+    {
+      "id": "nimble oak",
+      "group": 1
+    },
+    {
+      "id": "swift pecan",
+      "group": 3
+    },
+    {
+      "id": "curious beetle",
+      "group": 2
+    },
+    {
+      "id": "witty maple",
+      "group": 4
+    },
+    {
+      "id": "witty sun",
+      "group": 4
+    },
+    {
+      "id": "brave sun",
+      "group": 4
+    },
+    {
+      "id": "happy moss",
+      "group": 2
+    },
+    {
+      "id": "shiny moss",
+      "group": 3
+    },
+    {
+      "id": "shiny beetle",
+      "group": 1
+    },
+    {
+      "id": "wild wind",
+      "group": 3
+    },
+    {
+      "id": "sleepy acorn",
+      "group": 4
+    },
+    {
+      "id": "nimble pecan",
+      "group": 1
+    },
+    {
+      "id": "shiny feather",
+      "group": 1
+    },
+    {
+      "id": "wild maple",
+      "group": 4
+    },
+    {
+      "id": "gentle fox",
+      "group": 2
+    },
+    {
+      "id": "sneaky river",
+      "group": 3
+    },
+    {
+      "id": "fuzzy willow",
+      "group": 2
+    },
+    {
+      "id": "wild oak",
+      "group": 1
+    },
+    {
+      "id": "sly river",
+      "group": 4
+    },
+    {
+      "id": "sleepy cloud",
+      "group": 2
+    },
+    {
+      "id": "swift beetle",
+      "group": 3
+    },
+    {
+      "id": "happy acorn",
+      "group": 4
+    },
+    {
+      "id": "quiet moss",
+      "group": 2
+    },
+    {
+      "id": "gentle fern",
+      "group": 4
+    },
+    {
+      "id": "witty wind",
+      "group": 1
+    },
+    {
+      "id": "sneaky sun",
+      "group": 3
+    },
+    {
+      "id": "brave pecan",
+      "group": 2
+    },
+    {
+      "id": "shiny badger",
+      "group": 1
+    },
+    {
+      "id": "brave beetle",
+      "group": 2
+    },
+    {
+      "id": "lucky fern",
+      "group": 1
+    },
+    {
+      "id": "sleepy badger",
+      "group": 2
+    },
+    {
+      "id": "nimble sun",
+      "group": 4
+    },
+    {
+      "id": "witty fox",
+      "group": 4
+    },
+    {
+      "id": "witty feather",
+      "group": 2
+    },
+    {
+      "id": "happy badger",
+      "group": 3
+    },
+    {
+      "id": "curious acorn",
+      "group": 1
+    },
+    {
+      "id": "ancient river",
+      "group": 4
+    },
+    {
+      "id": "nimble feather",
+      "group": 2
+    },
+    {
+      "id": "happy maple",
+      "group": 3
+    },
+    {
+      "id": "happy feather",
+      "group": 2
+    },
+    {
+      "id": "brave moss",
+      "group": 2
+    },
+    {
+      "id": "quiet pecan",
+      "group": 1
+    },
+    {
+      "id": "brave cloud",
+      "group": 4
+    },
+    {
+      "id": "fuzzy fern",
+      "group": 2
+    },
+    {
+      "id": "wild feather",
+      "group": 2
+    },
+    {
+      "id": "swift wind",
+      "group": 1
+    },
+    {
+      "id": "sneaky stone",
+      "group": 4
+    },
+    {
+      "id": "brave willow",
+      "group": 3
+    },
+    {
+      "id": "sly fox",
+      "group": 1
+    },
+    {
+      "id": "curious feather",
+      "group": 2
+    },
+    {
+      "id": "ancient pecan",
+      "group": 3
+    },
+    {
+      "id": "brave acorn",
+      "group": 1
+    },
+    {
+      "id": "curious fern",
+      "group": 1
+    },
+    {
+      "id": "lucky maple",
+      "group": 1
+    },
+    {
+      "id": "gentle maple",
+      "group": 3
+    },
+    {
+      "id": "lucky moss",
+      "group": 3
+    },
+    {
+      "id": "fuzzy pecan",
+      "group": 1
+    },
+    {
+      "id": "witty fern",
+      "group": 3
+    },
+    {
+      "id": "curious fox",
+      "group": 4
+    },
+    {
+      "id": "fuzzy feather",
+      "group": 4
+    },
+    {
+      "id": "sleepy oak",
+      "group": 2
+    },
+    {
+      "id": "ancient stone",
+      "group": 4
+    },
+    {
+      "id": "happy wind",
+      "group": 4
+    },
+    {
+      "id": "sly pecan",
+      "group": 1
+    },
+    {
+      "id": "gentle badger",
+      "group": 3
+    },
+    {
+      "id": "fuzzy badger",
+      "group": 3
+    },
+    {
+      "id": "quiet fern",
+      "group": 2
+    },
+    {
+      "id": "lucky fox",
+      "group": 2
+    },
+    {
+      "id": "brave river",
+      "group": 3
+    },
+    {
+      "id": "brave badger",
+      "group": 4
+    },
+    {
+      "id": "happy willow",
+      "group": 3
+    },
+    {
+      "id": "fuzzy wind",
+      "group": 4
+    },
+    {
+      "id": "swift badger",
+      "group": 2
+    },
+    {
+      "id": "sly fern",
+      "group": 4
+    },
+    {
+      "id": "gentle moss",
+      "group": 3
+    },
+    {
+      "id": "brave fox",
+      "group": 3
+    },
+    {
+      "id": "ancient oak",
+      "group": 1
+    },
+    {
+      "id": "sly wind",
+      "group": 1
+    },
+    {
+      "id": "wild fox",
+      "group": 4
+    },
+    {
+      "id": "brave wind",
+      "group": 3
+    },
+    {
+      "id": "happy pecan",
+      "group": 4
+    },
+    {
+      "id": "swift moss",
+      "group": 1
+    },
+    {
+      "id": "swift fox",
+      "group": 1
+    },
+    {
+      "id": "curious river",
+      "group": 1
+    },
+    {
+      "id": "nimble beetle",
+      "group": 4
+    },
+    {
+      "id": "quiet badger",
+      "group": 1
+    },
+    {
+      "id": "shiny river",
+      "group": 3
+    },
+    {
+      "id": "wild badger",
+      "group": 4
+    },
+    {
+      "id": "curious sun",
+      "group": 3
+    },
+    {
+      "id": "ancient moss",
+      "group": 1
+    },
+    {
+      "id": "fuzzy oak",
+      "group": 4
+    },
+    {
+      "id": "shiny fern",
+      "group": 3
+    },
+    {
+      "id": "witty willow",
+      "group": 2
+    },
+    {
+      "id": "shiny fox",
+      "group": 4
+    },
+    {
+      "id": "brave oak",
+      "group": 4
+    },
+    {
+      "id": "curious wind",
+      "group": 1
+    },
+    {
+      "id": "quiet cloud",
+      "group": 2
+    },
+    {
+      "id": "swift fern",
+      "group": 2
+    },
+    {
+      "id": "wild sun",
+      "group": 1
+    },
+    {
+      "id": "swift feather",
+      "group": 3
+    },
+    {
+      "id": "wild beetle",
+      "group": 4
+    },
+    {
+      "id": "curious pecan",
+      "group": 1
+    },
+    {
+      "id": "sneaky feather",
+      "group": 4
+    },
+    {
+      "id": "lucky beetle",
+      "group": 1
+    },
+    {
+      "id": "gentle oak",
+      "group": 1
+    },
+    {
+      "id": "happy beetle",
+      "group": 4
+    },
+    {
+      "id": "curious moss",
+      "group": 2
+    },
+    {
+      "id": "lucky oak",
+      "group": 3
+    },
+    {
+      "id": "gentle pecan",
+      "group": 1
+    },
+    {
+      "id": "wild moss",
+      "group": 1
+    },
+    {
+      "id": "happy stone",
+      "group": 1
+    },
+    {
+      "id": "gentle feather",
+      "group": 3
+    },
+    {
+      "id": "witty moss",
+      "group": 1
+    },
+    {
+      "id": "curious willow",
+      "group": 1
+    },
+    {
+      "id": "quiet fox",
+      "group": 1
+    },
+    {
+      "id": "ancient maple",
+      "group": 3
+    },
+    {
+      "id": "shiny oak",
+      "group": 2
+    },
+    {
+      "id": "swift maple",
+      "group": 4
+    },
+    {
+      "id": "happy sun",
+      "group": 1
+    },
+    {
+      "id": "sly sun",
+      "group": 1
+    },
+    {
+      "id": "shiny wind",
+      "group": 1
+    },
+    {
+      "id": "quiet river",
+      "group": 4
+    },
+    {
+      "id": "ancient fern",
+      "group": 1
+    },
+    {
+      "id": "sleepy willow",
+      "group": 1
+    },
+    {
+      "id": "brave maple",
+      "group": 4
+    },
+    {
+      "id": "wild river",
+      "group": 4
+    },
+    {
+      "id": "ancient willow",
+      "group": 3
+    },
+    {
+      "id": "sly feather",
+      "group": 4
+    },
+    {
+      "id": "fuzzy fox",
+      "group": 2
+    },
+    {
+      "id": "quiet wind",
+      "group": 3
+    },
+    {
+      "id": "quiet feather",
+      "group": 1
+    },
+    {
+      "id": "fuzzy cloud",
+      "group": 4
+    },
+    {
+      "id": "ancient cloud",
+      "group": 4
+    },
+    {
+      "id": "shiny cloud",
+      "group": 1
+    },
+    {
+      "id": "nimble willow",
+      "group": 3
+    },
+    {
+      "id": "wild willow",
+      "group": 1
+    },
+    {
+      "id": "fuzzy stone",
+      "group": 1
+    },
+    {
+      "id": "sleepy maple",
+      "group": 4
+    },
+    {
+      "id": "gentle acorn",
+      "group": 2
+    },
+    {
+      "id": "witty pecan",
+      "group": 4
+    },
+    {
+      "id": "nimble cloud",
+      "group": 4
+    },
+    {
+      "id": "sly willow",
+      "group": 4
+    },
+    {
+      "id": "swift river",
+      "group": 4
+    },
+    {
+      "id": "wild cloud",
+      "group": 4
+    },
+    {
+      "id": "sneaky pecan",
+      "group": 2
+    },
+    {
+      "id": "nimble wind",
+      "group": 1
+    },
+    {
+      "id": "fuzzy river",
+      "group": 3
+    },
+    {
+      "id": "swift cloud",
+      "group": 1
+    },
+    {
+      "id": "ancient fox",
+      "group": 3
+    },
+    {
+      "id": "happy fox",
+      "group": 1
+    },
+    {
+      "id": "quiet maple",
+      "group": 4
+    },
+    {
+      "id": "wild fern",
+      "group": 2
+    },
+    {
+      "id": "curious cloud",
+      "group": 4
+    },
+    {
+      "id": "witty cloud",
+      "group": 1
+    },
+    {
+      "id": "witty stone",
+      "group": 4
+    },
+    {
+      "id": "gentle beetle",
+      "group": 2
+    },
+    {
+      "id": "wild stone",
+      "group": 2
+    },
+    {
+      "id": "sneaky beetle",
+      "group": 1
+    },
+    {
+      "id": "happy river",
+      "group": 3
+    },
+    {
+      "id": "sneaky fox",
+      "group": 2
+    },
+    {
+      "id": "brave stone",
+      "group": 3
+    },
+    {
+      "id": "gentle river",
+      "group": 2
+    },
+    {
+      "id": "witty acorn",
+      "group": 1
+    },
+    {
+      "id": "happy cloud",
+      "group": 2
+    },
+    {
+      "id": "quiet oak",
+      "group": 4
+    },
+    {
+      "id": "sleepy fox",
+      "group": 4
+    },
+    {
+      "id": "sneaky wind",
+      "group": 1
+    },
+    {
+      "id": "sleepy stone",
+      "group": 4
+    },
+    {
+      "id": "lucky pecan",
+      "group": 4
+    },
+    {
+      "id": "sly oak",
+      "group": 4
+    },
+    {
+      "id": "witty beetle",
+      "group": 4
+    },
+    {
+      "id": "shiny acorn",
+      "group": 3
+    },
+    {
+      "id": "fuzzy moss",
+      "group": 1
+    },
+    {
+      "id": "lucky feather",
+      "group": 2
+    },
+    {
+      "id": "ancient badger",
+      "group": 4
+    },
+    {
+      "id": "lucky wind",
+      "group": 3
+    },
+    {
+      "id": "shiny willow",
+      "group": 3
+    },
+    {
+      "id": "gentle cloud",
+      "group": 2
+    },
+    {
+      "id": "swift sun",
+      "group": 1
+    },
+    {
+      "id": "quiet acorn",
+      "group": 4
+    },
+    {
+      "id": "sleepy moss",
+      "group": 4
+    },
+    {
+      "id": "gentle wind",
+      "group": 1
+    },
+    {
+      "id": "sneaky willow",
+      "group": 3
+    },
+    {
+      "id": "curious stone",
+      "group": 4
+    }
+  ],
+  "links": [
+    {
+      "source": "witty river",
+      "target": "nimble acorn",
+      "value": 3
+    },
+    {
+      "source": "witty river",
+      "target": "happy fox",
+      "value": 4
+    },
+    {
+      "source": "witty river",
+      "target": "curious fern",
+      "value": 1
+    },
+    {
+      "source": "witty river",
+      "target": "sly river",
+      "value": 3
+    },
+    {
+      "source": "witty river",
+      "target": "sneaky pecan",
+      "value": 4
+    },
+    {
+      "source": "witty river",
+      "target": "witty moss",
+      "value": 4
+    },
+    {
+      "source": "witty river",
+      "target": "fuzzy fern",
+      "value": 3
+    },
+    {
+      "source": "witty river",
+      "target": "lucky wind",
+      "value": 4
+    },
+    {
+      "source": "sleepy pecan",
+      "target": "quiet fern",
+      "value": 1
+    },
+    {
+      "source": "sleepy pecan",
+      "target": "sneaky pecan",
+      "value": 4
+    },
+    {
+      "source": "sleepy pecan",
+      "target": "sleepy stone",
+      "value": 2
+    },
+    {
+      "source": "sleepy pecan",
+      "target": "happy badger",
+      "value": 3
+    },
+    {
+      "source": "sleepy pecan",
+      "target": "wild maple",
+      "value": 3
+    },
+    {
+      "source": "curious oak",
+      "target": "swift acorn",
+      "value": 2
+    },
+    {
+      "source": "curious oak",
+      "target": "sleepy beetle",
+      "value": 4
+    },
+    {
+      "source": "curious oak",
+      "target": "gentle beetle",
+      "value": 4
+    },
+    {
+      "source": "nimble badger",
+      "target": "sly willow",
+      "value": 3
+    },
+    {
+      "source": "nimble badger",
+      "target": "brave river",
+      "value": 1
+    },
+    {
+      "source": "nimble badger",
+      "target": "brave maple",
+      "value": 1
+    },
+    {
+      "source": "shiny stone",
+      "target": "brave cloud",
+      "value": 3
+    },
+    {
+      "source": "shiny stone",
+      "target": "nimble badger",
+      "value": 1
+    },
+    {
+      "source": "shiny stone",
+      "target": "wild beetle",
+      "value": 4
+    },
+    {
+      "source": "shiny stone",
+      "target": "witty acorn",
+      "value": 2
+    },
+    {
+      "source": "shiny stone",
+      "target": "swift oak",
+      "value": 2
+    },
+    {
+      "source": "nimble maple",
+      "target": "ancient moss",
+      "value": 2
+    },
+    {
+      "source": "nimble maple",
+      "target": "sleepy river",
+      "value": 1
+    },
+    {
+      "source": "nimble maple",
+      "target": "curious moss",
+      "value": 3
+    },
+    {
+      "source": "nimble maple",
+      "target": "fuzzy wind",
+      "value": 1
+    },
+    {
+      "source": "swift oak",
+      "target": "happy stone",
+      "value": 3
+    },
+    {
+      "source": "swift oak",
+      "target": "sleepy acorn",
+      "value": 1
+    },
+    {
+      "source": "swift oak",
+      "target": "brave fern",
+      "value": 2
+    },
+    {
+      "source": "swift oak",
+      "target": "sly feather",
+      "value": 1
+    },
+    {
+      "source": "swift oak",
+      "target": "gentle cloud",
+      "value": 1
+    },
+    {
+      "source": "sly cloud",
+      "target": "shiny cloud",
+      "value": 2
+    },
+    {
+      "source": "sly cloud",
+      "target": "shiny badger",
+      "value": 4
+    },
+    {
+      "source": "sly cloud",
+      "target": "shiny pecan",
+      "value": 2
+    },
+    {
+      "source": "nimble acorn",
+      "target": "shiny moss",
+      "value": 3
+    },
+    {
+      "source": "nimble acorn",
+      "target": "wild feather",
+      "value": 1
+    },
+    {
+      "source": "nimble acorn",
+      "target": "swift wind",
+      "value": 3
+    },
+    {
+      "source": "quiet beetle",
+      "target": "sleepy willow",
+      "value": 3
+    },
+    {
+      "source": "quiet beetle",
+      "target": "fuzzy willow",
+      "value": 4
+    },
+    {
+      "source": "quiet beetle",
+      "target": "sly wind",
+      "value": 1
+    },
+    {
+      "source": "quiet beetle",
+      "target": "swift wind",
+      "value": 1
+    },
+    {
+      "source": "quiet beetle",
+      "target": "gentle willow",
+      "value": 4
+    },
+    {
+      "source": "quiet beetle",
+      "target": "ancient stone",
+      "value": 2
+    },
+    {
+      "source": "wild pecan",
+      "target": "gentle river",
+      "value": 3
+    },
+    {
+      "source": "wild pecan",
+      "target": "fuzzy wind",
+      "value": 1
+    },
+    {
+      "source": "wild pecan",
+      "target": "lucky beetle",
+      "value": 2
+    },
+    {
+      "source": "wild pecan",
+      "target": "fuzzy willow",
+      "value": 2
+    },
+    {
+      "source": "wild pecan",
+      "target": "fuzzy stone",
+      "value": 1
+    },
+    {
+      "source": "wild pecan",
+      "target": "wild oak",
+      "value": 2
+    },
+    {
+      "source": "brave feather",
+      "target": "fuzzy wind",
+      "value": 4
+    },
+    {
+      "source": "brave feather",
+      "target": "sleepy river",
+      "value": 3
+    },
+    {
+      "source": "lucky sun",
+      "target": "witty beetle",
+      "value": 1
+    },
+    {
+      "source": "lucky sun",
+      "target": "nimble oak",
+      "value": 1
+    },
+    {
+      "source": "lucky sun",
+      "target": "sly pecan",
+      "value": 3
+    },
+    {
+      "source": "lucky sun",
+      "target": "wild acorn",
+      "value": 2
+    },
+    {
+      "source": "lucky sun",
+      "target": "ancient cloud",
+      "value": 2
+    },
+    {
+      "source": "lucky sun",
+      "target": "gentle moss",
+      "value": 2
+    },
+    {
+      "source": "sneaky fern",
+      "target": "quiet cloud",
+      "value": 4
+    },
+    {
+      "source": "sneaky fern",
+      "target": "curious pecan",
+      "value": 3
+    },
+    {
+      "source": "sneaky fern",
+      "target": "quiet maple",
+      "value": 4
+    },
+    {
+      "source": "sneaky fern",
+      "target": "sly maple",
+      "value": 4
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "sly feather",
+      "value": 2
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "curious badger",
+      "value": 1
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "witty badger",
+      "value": 3
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "brave river",
+      "value": 3
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "gentle fern",
+      "value": 1
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "happy badger",
+      "value": 3
+    },
+    {
+      "source": "sneaky acorn",
+      "target": "witty cloud",
+      "value": 4
+    },
+    {
+      "source": "nimble stone",
+      "target": "gentle river",
+      "value": 1
+    },
+    {
+      "source": "sneaky badger",
+      "target": "sleepy acorn",
+      "value": 1
+    },
+    {
+      "source": "sneaky badger",
+      "target": "witty oak",
+      "value": 4
+    },
+    {
+      "source": "sneaky badger",
+      "target": "nimble maple",
+      "value": 4
+    },
+    {
+      "source": "sneaky badger",
+      "target": "curious fern",
+      "value": 1
+    },
+    {
+      "source": "sneaky badger",
+      "target": "swift fox",
+      "value": 1
+    },
+    {
+      "source": "sneaky badger",
+      "target": "gentle wind",
+      "value": 1
+    },
+    {
+      "source": "sneaky badger",
+      "target": "swift wind",
+      "value": 3
+    },
+    {
+      "source": "sneaky badger",
+      "target": "shiny fern",
+      "value": 1
+    },
+    {
+      "source": "shiny sun",
+      "target": "gentle cloud",
+      "value": 1
+    },
+    {
+      "source": "shiny sun",
+      "target": "nimble sun",
+      "value": 1
+    },
+    {
+      "source": "shiny sun",
+      "target": "quiet acorn",
+      "value": 1
+    },
+    {
+      "source": "brave fern",
+      "target": "nimble maple",
+      "value": 2
+    },
+    {
+      "source": "brave fern",
+      "target": "gentle badger",
+      "value": 4
+    },
+    {
+      "source": "brave fern",
+      "target": "curious maple",
+      "value": 4
+    },
+    {
+      "source": "brave fern",
+      "target": "ancient feather",
+      "value": 2
+    },
+    {
+      "source": "sleepy river",
+      "target": "witty badger",
+      "value": 2
+    },
+    {
+      "source": "sleepy river",
+      "target": "fuzzy stone",
+      "value": 3
+    },
+    {
+      "source": "lucky acorn",
+      "target": "witty wind",
+      "value": 2
+    },
+    {
+      "source": "lucky acorn",
+      "target": "curious river",
+      "value": 1
+    },
+    {
+      "source": "lucky acorn",
+      "target": "brave pecan",
+      "value": 2
+    },
+    {
+      "source": "lucky acorn",
+      "target": "quiet oak",
+      "value": 3
+    },
+    {
+      "source": "lucky acorn",
+      "target": "sleepy river",
+      "value": 2
+    },
+    {
+      "source": "nimble fox",
+      "target": "sly sun",
+      "value": 3
+    },
+    {
+      "source": "nimble fox",
+      "target": "sleepy oak",
+      "value": 3
+    },
+    {
+      "source": "nimble fox",
+      "target": "ancient pecan",
+      "value": 2
+    },
+    {
+      "source": "nimble fox",
+      "target": "quiet badger",
+      "value": 1
+    },
+    {
+      "source": "nimble fox",
+      "target": "ancient sun",
+      "value": 4
+    },
+    {
+      "source": "nimble fox",
+      "target": "swift badger",
+      "value": 3
+    },
+    {
+      "source": "fuzzy acorn",
+      "target": "sneaky badger",
+      "value": 4
+    },
+    {
+      "source": "fuzzy acorn",
+      "target": "brave wind",
+      "value": 4
+    },
+    {
+      "source": "fuzzy acorn",
+      "target": "wild willow",
+      "value": 2
+    },
+    {
+      "source": "fuzzy acorn",
+      "target": "nimble pecan",
+      "value": 3
+    },
+    {
+      "source": "fuzzy acorn",
+      "target": "brave river",
+      "value": 2
+    },
+    {
+      "source": "sly acorn",
+      "target": "ancient wind",
+      "value": 1
+    },
+    {
+      "source": "sly acorn",
+      "target": "wild badger",
+      "value": 2
+    },
+    {
+      "source": "sly acorn",
+      "target": "gentle beetle",
+      "value": 2
+    },
+    {
+      "source": "sly acorn",
+      "target": "wild maple",
+      "value": 2
+    },
+    {
+      "source": "fuzzy maple",
+      "target": "witty fox",
+      "value": 2
+    },
+    {
+      "source": "fuzzy maple",
+      "target": "nimble stone",
+      "value": 1
+    },
+    {
+      "source": "fuzzy maple",
+      "target": "sly beetle",
+      "value": 4
+    },
+    {
+      "source": "fuzzy maple",
+      "target": "witty sun",
+      "value": 1
+    },
+    {
+      "source": "sleepy feather",
+      "target": "sleepy acorn",
+      "value": 2
+    },
+    {
+      "source": "sleepy feather",
+      "target": "shiny badger",
+      "value": 3
+    },
+    {
+      "source": "sleepy feather",
+      "target": "quiet fox",
+      "value": 1
+    },
+    {
+      "source": "sleepy feather",
+      "target": "ancient stone",
+      "value": 3
+    },
+    {
+      "source": "sly moss",
+      "target": "shiny fern",
+      "value": 2
+    },
+    {
+      "source": "sly moss",
+      "target": "sly badger",
+      "value": 3
+    },
+    {
+      "source": "sly moss",
+      "target": "ancient fern",
+      "value": 4
+    },
+    {
+      "source": "nimble moss",
+      "target": "gentle stone",
+      "value": 4
+    },
+    {
+      "source": "nimble moss",
+      "target": "fuzzy feather",
+      "value": 3
+    },
+    {
+      "source": "happy oak",
+      "target": "sleepy fox",
+      "value": 3
+    },
+    {
+      "source": "happy oak",
+      "target": "happy river",
+      "value": 2
+    },
+    {
+      "source": "happy oak",
+      "target": "sneaky pecan",
+      "value": 3
+    },
+    {
+      "source": "happy oak",
+      "target": "sleepy river",
+      "value": 1
+    },
+    {
+      "source": "happy oak",
+      "target": "sleepy moss",
+      "value": 1
+    },
+    {
+      "source": "ancient acorn",
+      "target": "ancient cloud",
+      "value": 3
+    },
+    {
+      "source": "ancient acorn",
+      "target": "fuzzy fox",
+      "value": 4
+    },
+    {
+      "source": "swift acorn",
+      "target": "fuzzy oak",
+      "value": 1
+    },
+    {
+      "source": "swift acorn",
+      "target": "gentle oak",
+      "value": 4
+    },
+    {
+      "source": "swift acorn",
+      "target": "fuzzy cloud",
+      "value": 4
+    },
+    {
+      "source": "swift acorn",
+      "target": "lucky stone",
+      "value": 2
+    },
+    {
+      "source": "swift acorn",
+      "target": "sneaky oak",
+      "value": 3
+    },
+    {
+      "source": "swift acorn",
+      "target": "lucky badger",
+      "value": 1
+    },
+    {
+      "source": "swift acorn",
+      "target": "fuzzy feather",
+      "value": 3
+    },
+    {
+      "source": "sneaky maple",
+      "target": "witty wind",
+      "value": 4
+    },
+    {
+      "source": "sneaky maple",
+      "target": "ancient pecan",
+      "value": 2
+    },
+    {
+      "source": "sneaky maple",
+      "target": "fuzzy cloud",
+      "value": 2
+    },
+    {
+      "source": "sneaky maple",
+      "target": "happy stone",
+      "value": 4
+    },
+    {
+      "source": "sneaky maple",
+      "target": "witty badger",
+      "value": 2
+    },
+    {
+      "source": "lucky willow",
+      "target": "curious acorn",
+      "value": 2
+    },
+    {
+      "source": "lucky willow",
+      "target": "curious oak",
+      "value": 2
+    },
+    {
+      "source": "lucky willow",
+      "target": "curious wind",
+      "value": 1
+    },
+    {
+      "source": "lucky willow",
+      "target": "swift fern",
+      "value": 3
+    },
+    {
+      "source": "lucky willow",
+      "target": "wild badger",
+      "value": 2
+    },
+    {
+      "source": "ancient wind",
+      "target": "happy acorn",
+      "value": 2
+    },
+    {
+      "source": "ancient wind",
+      "target": "swift beetle",
+      "value": 2
+    },
+    {
+      "source": "witty badger",
+      "target": "nimble moss",
+      "value": 4
+    },
+    {
+      "source": "witty badger",
+      "target": "gentle sun",
+      "value": 1
+    },
+    {
+      "source": "witty badger",
+      "target": "quiet stone",
+      "value": 1
+    },
+    {
+      "source": "shiny pecan",
+      "target": "fuzzy moss",
+      "value": 4
+    },
+    {
+      "source": "shiny pecan",
+      "target": "sneaky willow",
+      "value": 2
+    },
+    {
+      "source": "shiny pecan",
+      "target": "brave fox",
+      "value": 3
+    },
+    {
+      "source": "shiny pecan",
+      "target": "sly sun",
+      "value": 4
+    },
+    {
+      "source": "shiny pecan",
+      "target": "gentle acorn",
+      "value": 2
+    },
+    {
+      "source": "sly beetle",
+      "target": "happy maple",
+      "value": 1
+    },
+    {
+      "source": "sly beetle",
+      "target": "quiet beetle",
+      "value": 1
+    },
+    {
+      "source": "sly beetle",
+      "target": "nimble wind",
+      "value": 2
+    },
+    {
+      "source": "sly beetle",
+      "target": "sneaky fern",
+      "value": 4
+    },
+    {
+      "source": "sly beetle",
+      "target": "sly feather",
+      "value": 1
+    },
+    {
+      "source": "sly beetle",
+      "target": "gentle feather",
+      "value": 2
+    },
+    {
+      "source": "quiet sun",
+      "target": "lucky badger",
+      "value": 2
+    },
+    {
+      "source": "quiet sun",
+      "target": "happy maple",
+      "value": 2
+    },
+    {
+      "source": "gentle stone",
+      "target": "swift badger",
+      "value": 4
+    },
+    {
+      "source": "gentle stone",
+      "target": "fuzzy maple",
+      "value": 1
+    },
+    {
+      "source": "gentle stone",
+      "target": "ancient cloud",
+      "value": 2
+    },
+    {
+      "source": "gentle stone",
+      "target": "sleepy maple",
+      "value": 2
+    },
+    {
+      "source": "fuzzy sun",
+      "target": "sneaky feather",
+      "value": 3
+    },
+    {
+      "source": "sly maple",
+      "target": "fuzzy maple",
+      "value": 1
+    },
+    {
+      "source": "sly maple",
+      "target": "curious fern",
+      "value": 3
+    },
+    {
+      "source": "sly maple",
+      "target": "sly beetle",
+      "value": 3
+    },
+    {
+      "source": "sly maple",
+      "target": "fuzzy willow",
+      "value": 4
+    },
+    {
+      "source": "sly maple",
+      "target": "shiny stone",
+      "value": 4
+    },
+    {
+      "source": "sly maple",
+      "target": "shiny maple",
+      "value": 1
+    },
+    {
+      "source": "sly maple",
+      "target": "gentle river",
+      "value": 4
+    },
+    {
+      "source": "happy fern",
+      "target": "quiet feather",
+      "value": 3
+    },
+    {
+      "source": "happy fern",
+      "target": "lucky pecan",
+      "value": 4
+    },
+    {
+      "source": "shiny maple",
+      "target": "quiet badger",
+      "value": 1
+    },
+    {
+      "source": "shiny maple",
+      "target": "fuzzy pecan",
+      "value": 3
+    },
+    {
+      "source": "shiny maple",
+      "target": "lucky badger",
+      "value": 2
+    },
+    {
+      "source": "shiny maple",
+      "target": "sleepy oak",
+      "value": 4
+    },
+    {
+      "source": "shiny maple",
+      "target": "curious river",
+      "value": 3
+    },
+    {
+      "source": "shiny maple",
+      "target": "witty river",
+      "value": 4
+    },
+    {
+      "source": "lucky stone",
+      "target": "lucky river",
+      "value": 2
+    },
+    {
+      "source": "lucky stone",
+      "target": "nimble fox",
+      "value": 4
+    },
+    {
+      "source": "lucky stone",
+      "target": "fuzzy sun",
+      "value": 3
+    },
+    {
+      "source": "quiet stone",
+      "target": "sneaky river",
+      "value": 1
+    },
+    {
+      "source": "quiet stone",
+      "target": "sly beetle",
+      "value": 4
+    },
+    {
+      "source": "quiet stone",
+      "target": "ancient maple",
+      "value": 1
+    },
+    {
+      "source": "quiet stone",
+      "target": "wild sun",
+      "value": 2
+    },
+    {
+      "source": "quiet stone",
+      "target": "fuzzy cloud",
+      "value": 2
+    },
+    {
+      "source": "sleepy sun",
+      "target": "sneaky stone",
+      "value": 2
+    },
+    {
+      "source": "sleepy sun",
+      "target": "fuzzy fern",
+      "value": 4
+    },
+    {
+      "source": "sleepy sun",
+      "target": "quiet wind",
+      "value": 1
+    },
+    {
+      "source": "sleepy sun",
+      "target": "witty fox",
+      "value": 4
+    },
+    {
+      "source": "sleepy sun",
+      "target": "brave feather",
+      "value": 3
+    },
+    {
+      "source": "lucky badger",
+      "target": "ancient badger",
+      "value": 4
+    },
+    {
+      "source": "lucky badger",
+      "target": "fuzzy stone",
+      "value": 3
+    },
+    {
+      "source": "lucky badger",
+      "target": "gentle wind",
+      "value": 4
+    },
+    {
+      "source": "lucky badger",
+      "target": "wild oak",
+      "value": 2
+    },
+    {
+      "source": "lucky badger",
+      "target": "quiet wind",
+      "value": 1
+    },
+    {
+      "source": "lucky badger",
+      "target": "happy river",
+      "value": 4
+    },
+    {
+      "source": "lucky badger",
+      "target": "fuzzy feather",
+      "value": 4
+    },
+    {
+      "source": "gentle sun",
+      "target": "ancient fox",
+      "value": 3
+    },
+    {
+      "source": "gentle sun",
+      "target": "swift stone",
+      "value": 2
+    },
+    {
+      "source": "gentle sun",
+      "target": "happy stone",
+      "value": 3
+    },
+    {
+      "source": "gentle sun",
+      "target": "witty willow",
+      "value": 1
+    },
+    {
+      "source": "gentle sun",
+      "target": "shiny cloud",
+      "value": 3
+    },
+    {
+      "source": "lucky cloud",
+      "target": "fuzzy badger",
+      "value": 2
+    },
+    {
+      "source": "lucky cloud",
+      "target": "swift feather",
+      "value": 1
+    },
+    {
+      "source": "lucky cloud",
+      "target": "fuzzy beetle",
+      "value": 3
+    },
+    {
+      "source": "lucky cloud",
+      "target": "sleepy fox",
+      "value": 1
+    },
+    {
+      "source": "curious badger",
+      "target": "sneaky acorn",
+      "value": 4
+    },
+    {
+      "source": "curious badger",
+      "target": "swift sun",
+      "value": 2
+    },
+    {
+      "source": "curious badger",
+      "target": "shiny river",
+      "value": 2
+    },
+    {
+      "source": "curious badger",
+      "target": "shiny acorn",
+      "value": 3
+    },
+    {
+      "source": "curious badger",
+      "target": "brave maple",
+      "value": 3
+    },
+    {
+      "source": "curious badger",
+      "target": "quiet fox",
+      "value": 4
+    },
+    {
+      "source": "sleepy wind",
+      "target": "happy river",
+      "value": 2
+    },
+    {
+      "source": "sleepy wind",
+      "target": "swift sun",
+      "value": 1
+    },
+    {
+      "source": "sleepy wind",
+      "target": "wild feather",
+      "value": 1
+    },
+    {
+      "source": "sleepy wind",
+      "target": "sleepy feather",
+      "value": 4
+    },
+    {
+      "source": "sleepy wind",
+      "target": "sleepy willow",
+      "value": 2
+    },
+    {
+      "source": "quiet willow",
+      "target": "happy fox",
+      "value": 2
+    },
+    {
+      "source": "quiet willow",
+      "target": "shiny cloud",
+      "value": 4
+    },
+    {
+      "source": "quiet willow",
+      "target": "sly sun",
+      "value": 4
+    },
+    {
+      "source": "gentle willow",
+      "target": "brave river",
+      "value": 4
+    },
+    {
+      "source": "gentle willow",
+      "target": "sneaky badger",
+      "value": 3
+    },
+    {
+      "source": "gentle willow",
+      "target": "brave feather",
+      "value": 3
+    },
+    {
+      "source": "gentle willow",
+      "target": "wild wind",
+      "value": 1
+    },
+    {
+      "source": "gentle willow",
+      "target": "happy stone",
+      "value": 1
+    },
+    {
+      "source": "gentle willow",
+      "target": "swift maple",
+      "value": 3
+    },
+    {
+      "source": "sneaky oak",
+      "target": "quiet stone",
+      "value": 2
+    },
+    {
+      "source": "sneaky oak",
+      "target": "fuzzy moss",
+      "value": 1
+    },
+    {
+      "source": "sneaky oak",
+      "target": "witty wind",
+      "value": 2
+    },
+    {
+      "source": "sneaky oak",
+      "target": "ancient wind",
+      "value": 4
+    },
+    {
+      "source": "sneaky oak",
+      "target": "nimble pecan",
+      "value": 1
+    },
+    {
+      "source": "witty oak",
+      "target": "shiny river",
+      "value": 1
+    },
+    {
+      "source": "witty oak",
+      "target": "sly fox",
+      "value": 1
+    },
+    {
+      "source": "witty oak",
+      "target": "curious wind",
+      "value": 3
+    },
+    {
+      "source": "witty oak",
+      "target": "shiny wind",
+      "value": 3
+    },
+    {
+      "source": "sly badger",
+      "target": "happy acorn",
+      "value": 3
+    },
+    {
+      "source": "sly badger",
+      "target": "witty maple",
+      "value": 1
+    },
+    {
+      "source": "sly badger",
+      "target": "gentle moss",
+      "value": 2
+    },
+    {
+      "source": "sly badger",
+      "target": "quiet oak",
+      "value": 2
+    },
+    {
+      "source": "sly badger",
+      "target": "sleepy fern",
+      "value": 3
+    },
+    {
+      "source": "sly badger",
+      "target": "happy stone",
+      "value": 1
+    },
+    {
+      "source": "sly badger",
+      "target": "sneaky fox",
+      "value": 2
+    },
+    {
+      "source": "nimble fern",
+      "target": "shiny oak",
+      "value": 2
+    },
+    {
+      "source": "nimble fern",
+      "target": "sneaky oak",
+      "value": 1
+    },
+    {
+      "source": "nimble fern",
+      "target": "swift sun",
+      "value": 1
+    },
+    {
+      "source": "nimble fern",
+      "target": "shiny acorn",
+      "value": 1
+    },
+    {
+      "source": "sleepy beetle",
+      "target": "sleepy feather",
+      "value": 2
+    },
+    {
+      "source": "sleepy beetle",
+      "target": "wild stone",
+      "value": 3
+    },
+    {
+      "source": "sleepy beetle",
+      "target": "quiet beetle",
+      "value": 3
+    },
+    {
+      "source": "ancient sun",
+      "target": "quiet pecan",
+      "value": 4
+    },
+    {
+      "source": "ancient sun",
+      "target": "shiny wind",
+      "value": 4
+    },
+    {
+      "source": "ancient sun",
+      "target": "quiet fox",
+      "value": 3
+    },
+    {
+      "source": "ancient sun",
+      "target": "wild badger",
+      "value": 3
+    },
+    {
+      "source": "ancient sun",
+      "target": "wild pecan",
+      "value": 1
+    },
+    {
+      "source": "ancient sun",
+      "target": "quiet acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient sun",
+      "target": "curious acorn",
+      "value": 2
+    },
+    {
+      "source": "ancient sun",
+      "target": "happy badger",
+      "value": 2
+    },
+    {
+      "source": "ancient sun",
+      "target": "fuzzy badger",
+      "value": 3
+    },
+    {
+      "source": "sneaky cloud",
+      "target": "fuzzy willow",
+      "value": 3
+    },
+    {
+      "source": "lucky river",
+      "target": "sly sun",
+      "value": 4
+    },
+    {
+      "source": "lucky river",
+      "target": "wild badger",
+      "value": 4
+    },
+    {
+      "source": "lucky river",
+      "target": "nimble pecan",
+      "value": 2
+    },
+    {
+      "source": "lucky river",
+      "target": "quiet badger",
+      "value": 1
+    },
+    {
+      "source": "swift willow",
+      "target": "swift river",
+      "value": 2
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "swift beetle",
+      "value": 3
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "nimble badger",
+      "value": 4
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "ancient river",
+      "value": 1
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "curious beetle",
+      "value": 4
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "wild beetle",
+      "value": 2
+    },
+    {
+      "source": "fuzzy beetle",
+      "target": "quiet fern",
+      "value": 3
+    },
+    {
+      "source": "swift stone",
+      "target": "fuzzy moss",
+      "value": 3
+    },
+    {
+      "source": "swift stone",
+      "target": "shiny beetle",
+      "value": 4
+    },
+    {
+      "source": "sleepy fern",
+      "target": "lucky willow",
+      "value": 4
+    },
+    {
+      "source": "sleepy fern",
+      "target": "quiet badger",
+      "value": 4
+    },
+    {
+      "source": "sleepy fern",
+      "target": "sneaky fern",
+      "value": 4
+    },
+    {
+      "source": "sleepy fern",
+      "target": "happy cloud",
+      "value": 1
+    },
+    {
+      "source": "sleepy fern",
+      "target": "nimble sun",
+      "value": 4
+    },
+    {
+      "source": "sly stone",
+      "target": "ancient fern",
+      "value": 4
+    },
+    {
+      "source": "sly stone",
+      "target": "quiet moss",
+      "value": 1
+    },
+    {
+      "source": "sly stone",
+      "target": "sleepy badger",
+      "value": 1
+    },
+    {
+      "source": "sly stone",
+      "target": "quiet maple",
+      "value": 2
+    },
+    {
+      "source": "sneaky moss",
+      "target": "wild sun",
+      "value": 1
+    },
+    {
+      "source": "curious maple",
+      "target": "nimble acorn",
+      "value": 2
+    },
+    {
+      "source": "curious maple",
+      "target": "witty badger",
+      "value": 2
+    },
+    {
+      "source": "curious maple",
+      "target": "fuzzy stone",
+      "value": 2
+    },
+    {
+      "source": "curious maple",
+      "target": "lucky cloud",
+      "value": 3
+    },
+    {
+      "source": "curious maple",
+      "target": "witty willow",
+      "value": 1
+    },
+    {
+      "source": "curious maple",
+      "target": "happy beetle",
+      "value": 3
+    },
+    {
+      "source": "curious maple",
+      "target": "lucky stone",
+      "value": 1
+    },
+    {
+      "source": "wild acorn",
+      "target": "fuzzy river",
+      "value": 2
+    },
+    {
+      "source": "wild acorn",
+      "target": "lucky maple",
+      "value": 2
+    },
+    {
+      "source": "wild acorn",
+      "target": "sly fern",
+      "value": 2
+    },
+    {
+      "source": "ancient beetle",
+      "target": "sleepy wind",
+      "value": 3
+    },
+    {
+      "source": "ancient beetle",
+      "target": "shiny willow",
+      "value": 2
+    },
+    {
+      "source": "ancient beetle",
+      "target": "nimble beetle",
+      "value": 1
+    },
+    {
+      "source": "ancient beetle",
+      "target": "swift pecan",
+      "value": 1
+    },
+    {
+      "source": "ancient beetle",
+      "target": "fuzzy sun",
+      "value": 4
+    },
+    {
+      "source": "ancient beetle",
+      "target": "nimble wind",
+      "value": 2
+    },
+    {
+      "source": "ancient beetle",
+      "target": "fuzzy pecan",
+      "value": 3
+    },
+    {
+      "source": "ancient feather",
+      "target": "wild maple",
+      "value": 3
+    },
+    {
+      "source": "ancient feather",
+      "target": "fuzzy fox",
+      "value": 3
+    },
+    {
+      "source": "ancient feather",
+      "target": "fuzzy acorn",
+      "value": 3
+    },
+    {
+      "source": "ancient feather",
+      "target": "quiet stone",
+      "value": 1
+    },
+    {
+      "source": "ancient feather",
+      "target": "curious stone",
+      "value": 4
+    },
+    {
+      "source": "ancient feather",
+      "target": "ancient maple",
+      "value": 3
+    },
+    {
+      "source": "nimble river",
+      "target": "witty wind",
+      "value": 3
+    },
+    {
+      "source": "nimble river",
+      "target": "fuzzy acorn",
+      "value": 2
+    },
+    {
+      "source": "nimble river",
+      "target": "sneaky badger",
+      "value": 4
+    },
+    {
+      "source": "nimble river",
+      "target": "brave fern",
+      "value": 1
+    },
+    {
+      "source": "nimble river",
+      "target": "nimble oak",
+      "value": 1
+    },
+    {
+      "source": "nimble oak",
+      "target": "witty river",
+      "value": 4
+    },
+    {
+      "source": "nimble oak",
+      "target": "wild willow",
+      "value": 1
+    },
+    {
+      "source": "nimble oak",
+      "target": "brave pecan",
+      "value": 4
+    },
+    {
+      "source": "nimble oak",
+      "target": "lucky river",
+      "value": 2
+    },
+    {
+      "source": "nimble oak",
+      "target": "brave badger",
+      "value": 2
+    },
+    {
+      "source": "swift pecan",
+      "target": "fuzzy willow",
+      "value": 3
+    },
+    {
+      "source": "swift pecan",
+      "target": "curious sun",
+      "value": 3
+    },
+    {
+      "source": "swift pecan",
+      "target": "sleepy badger",
+      "value": 1
+    },
+    {
+      "source": "curious beetle",
+      "target": "gentle willow",
+      "value": 4
+    },
+    {
+      "source": "curious beetle",
+      "target": "lucky sun",
+      "value": 1
+    },
+    {
+      "source": "curious beetle",
+      "target": "sleepy feather",
+      "value": 1
+    },
+    {
+      "source": "curious beetle",
+      "target": "happy willow",
+      "value": 2
+    },
+    {
+      "source": "curious beetle",
+      "target": "witty river",
+      "value": 1
+    },
+    {
+      "source": "curious beetle",
+      "target": "sleepy oak",
+      "value": 4
+    },
+    {
+      "source": "curious beetle",
+      "target": "lucky moss",
+      "value": 4
+    },
+    {
+      "source": "witty maple",
+      "target": "quiet cloud",
+      "value": 3
+    },
+    {
+      "source": "witty maple",
+      "target": "nimble acorn",
+      "value": 2
+    },
+    {
+      "source": "witty maple",
+      "target": "shiny pecan",
+      "value": 1
+    },
+    {
+      "source": "witty sun",
+      "target": "brave maple",
+      "value": 2
+    },
+    {
+      "source": "witty sun",
+      "target": "sly cloud",
+      "value": 4
+    },
+    {
+      "source": "witty sun",
+      "target": "sneaky wind",
+      "value": 3
+    },
+    {
+      "source": "witty sun",
+      "target": "sleepy river",
+      "value": 3
+    },
+    {
+      "source": "witty sun",
+      "target": "sneaky oak",
+      "value": 1
+    },
+    {
+      "source": "brave sun",
+      "target": "quiet wind",
+      "value": 1
+    },
+    {
+      "source": "happy moss",
+      "target": "wild stone",
+      "value": 4
+    },
+    {
+      "source": "happy moss",
+      "target": "ancient river",
+      "value": 4
+    },
+    {
+      "source": "happy moss",
+      "target": "gentle willow",
+      "value": 3
+    },
+    {
+      "source": "happy moss",
+      "target": "shiny willow",
+      "value": 4
+    },
+    {
+      "source": "happy moss",
+      "target": "curious maple",
+      "value": 2
+    },
+    {
+      "source": "shiny moss",
+      "target": "sly willow",
+      "value": 4
+    },
+    {
+      "source": "shiny moss",
+      "target": "gentle cloud",
+      "value": 2
+    },
+    {
+      "source": "shiny moss",
+      "target": "wild fox",
+      "value": 3
+    },
+    {
+      "source": "shiny moss",
+      "target": "ancient willow",
+      "value": 2
+    },
+    {
+      "source": "shiny beetle",
+      "target": "witty cloud",
+      "value": 1
+    },
+    {
+      "source": "shiny beetle",
+      "target": "swift cloud",
+      "value": 2
+    },
+    {
+      "source": "shiny beetle",
+      "target": "sneaky stone",
+      "value": 4
+    },
+    {
+      "source": "shiny beetle",
+      "target": "lucky pecan",
+      "value": 1
+    },
+    {
+      "source": "shiny beetle",
+      "target": "fuzzy beetle",
+      "value": 2
+    },
+    {
+      "source": "wild wind",
+      "target": "sleepy pecan",
+      "value": 4
+    },
+    {
+      "source": "wild wind",
+      "target": "fuzzy sun",
+      "value": 4
+    },
+    {
+      "source": "sleepy acorn",
+      "target": "quiet wind",
+      "value": 2
+    },
+    {
+      "source": "sleepy acorn",
+      "target": "sleepy sun",
+      "value": 2
+    },
+    {
+      "source": "nimble pecan",
+      "target": "witty fox",
+      "value": 3
+    },
+    {
+      "source": "nimble pecan",
+      "target": "swift oak",
+      "value": 3
+    },
+    {
+      "source": "nimble pecan",
+      "target": "brave feather",
+      "value": 4
+    },
+    {
+      "source": "nimble pecan",
+      "target": "curious river",
+      "value": 2
+    },
+    {
+      "source": "shiny feather",
+      "target": "lucky river",
+      "value": 4
+    },
+    {
+      "source": "shiny feather",
+      "target": "witty wind",
+      "value": 3
+    },
+    {
+      "source": "shiny feather",
+      "target": "sleepy badger",
+      "value": 1
+    },
+    {
+      "source": "shiny feather",
+      "target": "quiet moss",
+      "value": 4
+    },
+    {
+      "source": "shiny feather",
+      "target": "happy oak",
+      "value": 2
+    },
+    {
+      "source": "shiny feather",
+      "target": "lucky acorn",
+      "value": 3
+    },
+    {
+      "source": "wild maple",
+      "target": "brave badger",
+      "value": 1
+    },
+    {
+      "source": "wild maple",
+      "target": "wild willow",
+      "value": 4
+    },
+    {
+      "source": "gentle fox",
+      "target": "wild oak",
+      "value": 2
+    },
+    {
+      "source": "gentle fox",
+      "target": "swift stone",
+      "value": 2
+    },
+    {
+      "source": "gentle fox",
+      "target": "quiet acorn",
+      "value": 1
+    },
+    {
+      "source": "sneaky river",
+      "target": "happy stone",
+      "value": 1
+    },
+    {
+      "source": "sneaky river",
+      "target": "brave stone",
+      "value": 2
+    },
+    {
+      "source": "sneaky river",
+      "target": "sleepy willow",
+      "value": 3
+    },
+    {
+      "source": "sneaky river",
+      "target": "fuzzy cloud",
+      "value": 1
+    },
+    {
+      "source": "fuzzy willow",
+      "target": "fuzzy beetle",
+      "value": 4
+    },
+    {
+      "source": "fuzzy willow",
+      "target": "witty acorn",
+      "value": 1
+    },
+    {
+      "source": "fuzzy willow",
+      "target": "nimble badger",
+      "value": 4
+    },
+    {
+      "source": "wild oak",
+      "target": "shiny oak",
+      "value": 2
+    },
+    {
+      "source": "wild oak",
+      "target": "shiny sun",
+      "value": 2
+    },
+    {
+      "source": "wild oak",
+      "target": "brave sun",
+      "value": 4
+    },
+    {
+      "source": "wild oak",
+      "target": "sneaky acorn",
+      "value": 1
+    },
+    {
+      "source": "wild oak",
+      "target": "sleepy fern",
+      "value": 2
+    },
+    {
+      "source": "wild oak",
+      "target": "curious sun",
+      "value": 3
+    },
+    {
+      "source": "sly river",
+      "target": "brave fox",
+      "value": 2
+    },
+    {
+      "source": "sly river",
+      "target": "wild fern",
+      "value": 4
+    },
+    {
+      "source": "sly river",
+      "target": "happy oak",
+      "value": 4
+    },
+    {
+      "source": "sly river",
+      "target": "witty badger",
+      "value": 1
+    },
+    {
+      "source": "sly river",
+      "target": "gentle badger",
+      "value": 2
+    },
+    {
+      "source": "sly river",
+      "target": "quiet acorn",
+      "value": 3
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "nimble moss",
+      "value": 2
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "sly feather",
+      "value": 4
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "fuzzy fern",
+      "value": 1
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "swift stone",
+      "value": 3
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "witty pecan",
+      "value": 2
+    },
+    {
+      "source": "sleepy cloud",
+      "target": "nimble beetle",
+      "value": 2
+    },
+    {
+      "source": "swift beetle",
+      "target": "happy feather",
+      "value": 3
+    },
+    {
+      "source": "swift beetle",
+      "target": "brave river",
+      "value": 2
+    },
+    {
+      "source": "swift beetle",
+      "target": "nimble acorn",
+      "value": 2
+    },
+    {
+      "source": "swift beetle",
+      "target": "gentle willow",
+      "value": 1
+    },
+    {
+      "source": "happy acorn",
+      "target": "ancient maple",
+      "value": 3
+    },
+    {
+      "source": "quiet moss",
+      "target": "gentle feather",
+      "value": 2
+    },
+    {
+      "source": "quiet moss",
+      "target": "brave acorn",
+      "value": 4
+    },
+    {
+      "source": "quiet moss",
+      "target": "gentle stone",
+      "value": 2
+    },
+    {
+      "source": "quiet moss",
+      "target": "sly oak",
+      "value": 1
+    },
+    {
+      "source": "quiet moss",
+      "target": "gentle willow",
+      "value": 4
+    },
+    {
+      "source": "gentle fern",
+      "target": "swift river",
+      "value": 4
+    },
+    {
+      "source": "gentle fern",
+      "target": "nimble willow",
+      "value": 2
+    },
+    {
+      "source": "witty wind",
+      "target": "fuzzy beetle",
+      "value": 2
+    },
+    {
+      "source": "witty wind",
+      "target": "witty oak",
+      "value": 3
+    },
+    {
+      "source": "witty wind",
+      "target": "nimble fern",
+      "value": 3
+    },
+    {
+      "source": "witty wind",
+      "target": "sleepy maple",
+      "value": 2
+    },
+    {
+      "source": "witty wind",
+      "target": "nimble moss",
+      "value": 3
+    },
+    {
+      "source": "sneaky sun",
+      "target": "witty feather",
+      "value": 4
+    },
+    {
+      "source": "sneaky sun",
+      "target": "happy willow",
+      "value": 4
+    },
+    {
+      "source": "sneaky sun",
+      "target": "quiet sun",
+      "value": 2
+    },
+    {
+      "source": "sneaky sun",
+      "target": "fuzzy pecan",
+      "value": 2
+    },
+    {
+      "source": "sneaky sun",
+      "target": "happy acorn",
+      "value": 4
+    },
+    {
+      "source": "sneaky sun",
+      "target": "sneaky oak",
+      "value": 2
+    },
+    {
+      "source": "brave pecan",
+      "target": "swift maple",
+      "value": 1
+    },
+    {
+      "source": "brave pecan",
+      "target": "quiet wind",
+      "value": 1
+    },
+    {
+      "source": "brave pecan",
+      "target": "sly willow",
+      "value": 4
+    },
+    {
+      "source": "brave pecan",
+      "target": "happy fox",
+      "value": 2
+    },
+    {
+      "source": "shiny badger",
+      "target": "sly beetle",
+      "value": 2
+    },
+    {
+      "source": "shiny badger",
+      "target": "happy feather",
+      "value": 3
+    },
+    {
+      "source": "shiny badger",
+      "target": "brave badger",
+      "value": 4
+    },
+    {
+      "source": "shiny badger",
+      "target": "sleepy fern",
+      "value": 2
+    },
+    {
+      "source": "shiny badger",
+      "target": "curious feather",
+      "value": 2
+    },
+    {
+      "source": "shiny badger",
+      "target": "sleepy badger",
+      "value": 1
+    },
+    {
+      "source": "shiny badger",
+      "target": "sly moss",
+      "value": 2
+    },
+    {
+      "source": "brave beetle",
+      "target": "shiny fern",
+      "value": 2
+    },
+    {
+      "source": "brave beetle",
+      "target": "happy sun",
+      "value": 3
+    },
+    {
+      "source": "brave beetle",
+      "target": "quiet feather",
+      "value": 2
+    },
+    {
+      "source": "brave beetle",
+      "target": "nimble beetle",
+      "value": 3
+    },
+    {
+      "source": "lucky fern",
+      "target": "nimble fern",
+      "value": 2
+    },
+    {
+      "source": "lucky fern",
+      "target": "shiny badger",
+      "value": 3
+    },
+    {
+      "source": "lucky fern",
+      "target": "quiet river",
+      "value": 3
+    },
+    {
+      "source": "lucky fern",
+      "target": "sneaky willow",
+      "value": 4
+    },
+    {
+      "source": "sleepy badger",
+      "target": "happy beetle",
+      "value": 1
+    },
+    {
+      "source": "sleepy badger",
+      "target": "brave pecan",
+      "value": 1
+    },
+    {
+      "source": "sleepy badger",
+      "target": "happy sun",
+      "value": 4
+    },
+    {
+      "source": "nimble sun",
+      "target": "fuzzy acorn",
+      "value": 3
+    },
+    {
+      "source": "nimble sun",
+      "target": "wild fox",
+      "value": 4
+    },
+    {
+      "source": "nimble sun",
+      "target": "nimble maple",
+      "value": 2
+    },
+    {
+      "source": "nimble sun",
+      "target": "shiny beetle",
+      "value": 1
+    },
+    {
+      "source": "nimble sun",
+      "target": "shiny sun",
+      "value": 3
+    },
+    {
+      "source": "nimble sun",
+      "target": "sleepy willow",
+      "value": 4
+    },
+    {
+      "source": "witty fox",
+      "target": "wild maple",
+      "value": 2
+    },
+    {
+      "source": "witty fox",
+      "target": "sleepy willow",
+      "value": 3
+    },
+    {
+      "source": "witty fox",
+      "target": "sly pecan",
+      "value": 4
+    },
+    {
+      "source": "witty fox",
+      "target": "lucky fox",
+      "value": 1
+    },
+    {
+      "source": "witty feather",
+      "target": "shiny wind",
+      "value": 1
+    },
+    {
+      "source": "witty feather",
+      "target": "nimble feather",
+      "value": 4
+    },
+    {
+      "source": "witty feather",
+      "target": "curious sun",
+      "value": 3
+    },
+    {
+      "source": "witty feather",
+      "target": "sneaky maple",
+      "value": 1
+    },
+    {
+      "source": "witty feather",
+      "target": "quiet fox",
+      "value": 3
+    },
+    {
+      "source": "witty feather",
+      "target": "swift pecan",
+      "value": 3
+    },
+    {
+      "source": "witty feather",
+      "target": "brave sun",
+      "value": 4
+    },
+    {
+      "source": "happy badger",
+      "target": "fuzzy sun",
+      "value": 4
+    },
+    {
+      "source": "happy badger",
+      "target": "sly fox",
+      "value": 3
+    },
+    {
+      "source": "happy badger",
+      "target": "quiet maple",
+      "value": 4
+    },
+    {
+      "source": "curious acorn",
+      "target": "witty sun",
+      "value": 3
+    },
+    {
+      "source": "ancient river",
+      "target": "lucky acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient river",
+      "target": "fuzzy sun",
+      "value": 1
+    },
+    {
+      "source": "ancient river",
+      "target": "witty moss",
+      "value": 3
+    },
+    {
+      "source": "ancient river",
+      "target": "fuzzy moss",
+      "value": 3
+    },
+    {
+      "source": "nimble feather",
+      "target": "quiet pecan",
+      "value": 1
+    },
+    {
+      "source": "nimble feather",
+      "target": "swift cloud",
+      "value": 3
+    },
+    {
+      "source": "nimble feather",
+      "target": "sly cloud",
+      "value": 3
+    },
+    {
+      "source": "happy maple",
+      "target": "sneaky beetle",
+      "value": 3
+    },
+    {
+      "source": "happy maple",
+      "target": "sleepy fox",
+      "value": 1
+    },
+    {
+      "source": "happy maple",
+      "target": "gentle sun",
+      "value": 1
+    },
+    {
+      "source": "happy maple",
+      "target": "fuzzy oak",
+      "value": 1
+    },
+    {
+      "source": "happy maple",
+      "target": "sly cloud",
+      "value": 2
+    },
+    {
+      "source": "happy maple",
+      "target": "fuzzy acorn",
+      "value": 2
+    },
+    {
+      "source": "happy maple",
+      "target": "nimble stone",
+      "value": 4
+    },
+    {
+      "source": "happy maple",
+      "target": "sly oak",
+      "value": 4
+    },
+    {
+      "source": "happy maple",
+      "target": "lucky wind",
+      "value": 2
+    },
+    {
+      "source": "happy maple",
+      "target": "shiny willow",
+      "value": 1
+    },
+    {
+      "source": "happy maple",
+      "target": "ancient maple",
+      "value": 1
+    },
+    {
+      "source": "happy maple",
+      "target": "wild acorn",
+      "value": 2
+    },
+    {
+      "source": "happy feather",
+      "target": "sleepy fox",
+      "value": 4
+    },
+    {
+      "source": "happy feather",
+      "target": "shiny badger",
+      "value": 3
+    },
+    {
+      "source": "happy feather",
+      "target": "fuzzy wind",
+      "value": 1
+    },
+    {
+      "source": "happy feather",
+      "target": "quiet beetle",
+      "value": 3
+    },
+    {
+      "source": "happy feather",
+      "target": "witty river",
+      "value": 1
+    },
+    {
+      "source": "brave moss",
+      "target": "swift badger",
+      "value": 4
+    },
+    {
+      "source": "brave moss",
+      "target": "sleepy pecan",
+      "value": 2
+    },
+    {
+      "source": "brave moss",
+      "target": "sneaky moss",
+      "value": 2
+    },
+    {
+      "source": "quiet pecan",
+      "target": "shiny river",
+      "value": 2
+    },
+    {
+      "source": "quiet pecan",
+      "target": "sleepy sun",
+      "value": 1
+    },
+    {
+      "source": "quiet pecan",
+      "target": "shiny fern",
+      "value": 2
+    },
+    {
+      "source": "quiet pecan",
+      "target": "shiny moss",
+      "value": 3
+    },
+    {
+      "source": "quiet pecan",
+      "target": "nimble sun",
+      "value": 3
+    },
+    {
+      "source": "quiet pecan",
+      "target": "swift maple",
+      "value": 4
+    },
+    {
+      "source": "quiet pecan",
+      "target": "sleepy fox",
+      "value": 4
+    },
+    {
+      "source": "brave cloud",
+      "target": "curious sun",
+      "value": 4
+    },
+    {
+      "source": "brave cloud",
+      "target": "sly sun",
+      "value": 2
+    },
+    {
+      "source": "brave cloud",
+      "target": "brave wind",
+      "value": 2
+    },
+    {
+      "source": "brave cloud",
+      "target": "fuzzy oak",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "gentle fox",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "gentle cloud",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "curious badger",
+      "value": 1
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "sly cloud",
+      "value": 1
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "shiny cloud",
+      "value": 1
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "nimble moss",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fern",
+      "target": "wild wind",
+      "value": 3
+    },
+    {
+      "source": "wild feather",
+      "target": "sleepy oak",
+      "value": 2
+    },
+    {
+      "source": "wild feather",
+      "target": "gentle cloud",
+      "value": 1
+    },
+    {
+      "source": "wild feather",
+      "target": "gentle badger",
+      "value": 1
+    },
+    {
+      "source": "wild feather",
+      "target": "swift maple",
+      "value": 4
+    },
+    {
+      "source": "wild feather",
+      "target": "lucky river",
+      "value": 1
+    },
+    {
+      "source": "swift wind",
+      "target": "shiny wind",
+      "value": 4
+    },
+    {
+      "source": "swift wind",
+      "target": "gentle fox",
+      "value": 4
+    },
+    {
+      "source": "swift wind",
+      "target": "sneaky oak",
+      "value": 1
+    },
+    {
+      "source": "swift wind",
+      "target": "swift acorn",
+      "value": 4
+    },
+    {
+      "source": "sneaky stone",
+      "target": "gentle beetle",
+      "value": 4
+    },
+    {
+      "source": "sneaky stone",
+      "target": "witty badger",
+      "value": 3
+    },
+    {
+      "source": "sneaky stone",
+      "target": "gentle wind",
+      "value": 1
+    },
+    {
+      "source": "sneaky stone",
+      "target": "ancient willow",
+      "value": 2
+    },
+    {
+      "source": "sneaky stone",
+      "target": "quiet stone",
+      "value": 1
+    },
+    {
+      "source": "sneaky stone",
+      "target": "sleepy cloud",
+      "value": 2
+    },
+    {
+      "source": "sneaky stone",
+      "target": "ancient pecan",
+      "value": 1
+    },
+    {
+      "source": "brave willow",
+      "target": "ancient willow",
+      "value": 1
+    },
+    {
+      "source": "brave willow",
+      "target": "curious oak",
+      "value": 2
+    },
+    {
+      "source": "brave willow",
+      "target": "ancient river",
+      "value": 3
+    },
+    {
+      "source": "sly fox",
+      "target": "swift acorn",
+      "value": 3
+    },
+    {
+      "source": "sly fox",
+      "target": "ancient fox",
+      "value": 4
+    },
+    {
+      "source": "curious feather",
+      "target": "gentle beetle",
+      "value": 3
+    },
+    {
+      "source": "curious feather",
+      "target": "wild oak",
+      "value": 1
+    },
+    {
+      "source": "curious feather",
+      "target": "sleepy feather",
+      "value": 1
+    },
+    {
+      "source": "curious feather",
+      "target": "witty feather",
+      "value": 3
+    },
+    {
+      "source": "curious feather",
+      "target": "quiet fox",
+      "value": 3
+    },
+    {
+      "source": "ancient pecan",
+      "target": "sneaky wind",
+      "value": 3
+    },
+    {
+      "source": "ancient pecan",
+      "target": "sly acorn",
+      "value": 2
+    },
+    {
+      "source": "ancient pecan",
+      "target": "happy moss",
+      "value": 3
+    },
+    {
+      "source": "ancient pecan",
+      "target": "witty river",
+      "value": 3
+    },
+    {
+      "source": "ancient pecan",
+      "target": "lucky badger",
+      "value": 4
+    },
+    {
+      "source": "ancient pecan",
+      "target": "lucky acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient pecan",
+      "target": "fuzzy pecan",
+      "value": 4
+    },
+    {
+      "source": "brave acorn",
+      "target": "wild feather",
+      "value": 4
+    },
+    {
+      "source": "brave acorn",
+      "target": "sneaky wind",
+      "value": 2
+    },
+    {
+      "source": "brave acorn",
+      "target": "lucky moss",
+      "value": 1
+    },
+    {
+      "source": "brave acorn",
+      "target": "sleepy moss",
+      "value": 1
+    },
+    {
+      "source": "brave acorn",
+      "target": "gentle feather",
+      "value": 2
+    },
+    {
+      "source": "brave acorn",
+      "target": "shiny cloud",
+      "value": 4
+    },
+    {
+      "source": "brave acorn",
+      "target": "fuzzy fern",
+      "value": 1
+    },
+    {
+      "source": "curious fern",
+      "target": "fuzzy acorn",
+      "value": 3
+    },
+    {
+      "source": "curious fern",
+      "target": "wild cloud",
+      "value": 4
+    },
+    {
+      "source": "curious fern",
+      "target": "quiet beetle",
+      "value": 4
+    },
+    {
+      "source": "curious fern",
+      "target": "gentle stone",
+      "value": 3
+    },
+    {
+      "source": "curious fern",
+      "target": "shiny pecan",
+      "value": 2
+    },
+    {
+      "source": "curious fern",
+      "target": "gentle pecan",
+      "value": 3
+    },
+    {
+      "source": "curious fern",
+      "target": "nimble stone",
+      "value": 2
+    },
+    {
+      "source": "lucky maple",
+      "target": "quiet fern",
+      "value": 2
+    },
+    {
+      "source": "lucky maple",
+      "target": "sly wind",
+      "value": 4
+    },
+    {
+      "source": "lucky maple",
+      "target": "swift fox",
+      "value": 1
+    },
+    {
+      "source": "lucky maple",
+      "target": "ancient fern",
+      "value": 3
+    },
+    {
+      "source": "gentle maple",
+      "target": "gentle badger",
+      "value": 4
+    },
+    {
+      "source": "gentle maple",
+      "target": "lucky maple",
+      "value": 4
+    },
+    {
+      "source": "gentle maple",
+      "target": "happy cloud",
+      "value": 3
+    },
+    {
+      "source": "lucky moss",
+      "target": "brave wind",
+      "value": 3
+    },
+    {
+      "source": "lucky moss",
+      "target": "quiet pecan",
+      "value": 4
+    },
+    {
+      "source": "lucky moss",
+      "target": "gentle sun",
+      "value": 4
+    },
+    {
+      "source": "lucky moss",
+      "target": "wild pecan",
+      "value": 4
+    },
+    {
+      "source": "lucky moss",
+      "target": "brave cloud",
+      "value": 4
+    },
+    {
+      "source": "lucky moss",
+      "target": "happy cloud",
+      "value": 2
+    },
+    {
+      "source": "fuzzy pecan",
+      "target": "lucky fern",
+      "value": 1
+    },
+    {
+      "source": "fuzzy pecan",
+      "target": "sly river",
+      "value": 2
+    },
+    {
+      "source": "fuzzy pecan",
+      "target": "swift river",
+      "value": 1
+    },
+    {
+      "source": "fuzzy pecan",
+      "target": "lucky beetle",
+      "value": 3
+    },
+    {
+      "source": "witty fern",
+      "target": "sneaky oak",
+      "value": 2
+    },
+    {
+      "source": "curious fox",
+      "target": "witty acorn",
+      "value": 3
+    },
+    {
+      "source": "curious fox",
+      "target": "shiny fox",
+      "value": 2
+    },
+    {
+      "source": "curious fox",
+      "target": "gentle stone",
+      "value": 4
+    },
+    {
+      "source": "curious fox",
+      "target": "sleepy oak",
+      "value": 1
+    },
+    {
+      "source": "curious fox",
+      "target": "happy moss",
+      "value": 3
+    },
+    {
+      "source": "curious fox",
+      "target": "brave acorn",
+      "value": 3
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "nimble wind",
+      "value": 2
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "quiet willow",
+      "value": 4
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "sneaky moss",
+      "value": 1
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "sneaky river",
+      "value": 3
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "quiet sun",
+      "value": 2
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "fuzzy stone",
+      "value": 2
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "nimble cloud",
+      "value": 2
+    },
+    {
+      "source": "fuzzy feather",
+      "target": "sleepy badger",
+      "value": 4
+    },
+    {
+      "source": "sleepy oak",
+      "target": "witty stone",
+      "value": 3
+    },
+    {
+      "source": "sleepy oak",
+      "target": "quiet pecan",
+      "value": 4
+    },
+    {
+      "source": "sleepy oak",
+      "target": "lucky sun",
+      "value": 2
+    },
+    {
+      "source": "sleepy oak",
+      "target": "witty acorn",
+      "value": 2
+    },
+    {
+      "source": "sleepy oak",
+      "target": "witty fern",
+      "value": 4
+    },
+    {
+      "source": "ancient stone",
+      "target": "swift acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient stone",
+      "target": "sly acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient stone",
+      "target": "wild feather",
+      "value": 1
+    },
+    {
+      "source": "ancient stone",
+      "target": "nimble moss",
+      "value": 4
+    },
+    {
+      "source": "happy wind",
+      "target": "curious maple",
+      "value": 4
+    },
+    {
+      "source": "happy wind",
+      "target": "curious pecan",
+      "value": 2
+    },
+    {
+      "source": "happy wind",
+      "target": "sly maple",
+      "value": 2
+    },
+    {
+      "source": "happy wind",
+      "target": "fuzzy stone",
+      "value": 1
+    },
+    {
+      "source": "happy wind",
+      "target": "gentle cloud",
+      "value": 2
+    },
+    {
+      "source": "sly pecan",
+      "target": "witty river",
+      "value": 4
+    },
+    {
+      "source": "sly pecan",
+      "target": "quiet acorn",
+      "value": 2
+    },
+    {
+      "source": "sly pecan",
+      "target": "sleepy feather",
+      "value": 1
+    },
+    {
+      "source": "sly pecan",
+      "target": "lucky willow",
+      "value": 4
+    },
+    {
+      "source": "sly pecan",
+      "target": "happy fox",
+      "value": 4
+    },
+    {
+      "source": "gentle badger",
+      "target": "happy badger",
+      "value": 2
+    },
+    {
+      "source": "gentle badger",
+      "target": "ancient maple",
+      "value": 2
+    },
+    {
+      "source": "gentle badger",
+      "target": "sleepy oak",
+      "value": 1
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "quiet fern",
+      "value": 3
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "lucky fern",
+      "value": 1
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "nimble willow",
+      "value": 4
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "fuzzy acorn",
+      "value": 1
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "quiet fox",
+      "value": 3
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "sneaky badger",
+      "value": 3
+    },
+    {
+      "source": "fuzzy badger",
+      "target": "lucky willow",
+      "value": 2
+    },
+    {
+      "source": "quiet fern",
+      "target": "gentle fox",
+      "value": 3
+    },
+    {
+      "source": "quiet fern",
+      "target": "witty acorn",
+      "value": 2
+    },
+    {
+      "source": "quiet fern",
+      "target": "fuzzy pecan",
+      "value": 1
+    },
+    {
+      "source": "quiet fern",
+      "target": "wild river",
+      "value": 1
+    },
+    {
+      "source": "lucky fox",
+      "target": "nimble pecan",
+      "value": 3
+    },
+    {
+      "source": "lucky fox",
+      "target": "swift sun",
+      "value": 3
+    },
+    {
+      "source": "lucky fox",
+      "target": "swift river",
+      "value": 3
+    },
+    {
+      "source": "lucky fox",
+      "target": "lucky sun",
+      "value": 3
+    },
+    {
+      "source": "lucky fox",
+      "target": "sneaky acorn",
+      "value": 2
+    },
+    {
+      "source": "brave river",
+      "target": "gentle badger",
+      "value": 3
+    },
+    {
+      "source": "brave river",
+      "target": "shiny river",
+      "value": 1
+    },
+    {
+      "source": "brave river",
+      "target": "curious river",
+      "value": 2
+    },
+    {
+      "source": "brave badger",
+      "target": "curious acorn",
+      "value": 2
+    },
+    {
+      "source": "brave badger",
+      "target": "sly wind",
+      "value": 2
+    },
+    {
+      "source": "brave badger",
+      "target": "shiny acorn",
+      "value": 1
+    },
+    {
+      "source": "brave badger",
+      "target": "happy stone",
+      "value": 1
+    },
+    {
+      "source": "brave badger",
+      "target": "sneaky willow",
+      "value": 1
+    },
+    {
+      "source": "happy willow",
+      "target": "sly maple",
+      "value": 3
+    },
+    {
+      "source": "happy willow",
+      "target": "wild pecan",
+      "value": 4
+    },
+    {
+      "source": "happy willow",
+      "target": "lucky river",
+      "value": 2
+    },
+    {
+      "source": "happy willow",
+      "target": "sneaky maple",
+      "value": 2
+    },
+    {
+      "source": "fuzzy wind",
+      "target": "sleepy oak",
+      "value": 4
+    },
+    {
+      "source": "fuzzy wind",
+      "target": "sleepy fox",
+      "value": 4
+    },
+    {
+      "source": "swift badger",
+      "target": "nimble stone",
+      "value": 1
+    },
+    {
+      "source": "sly fern",
+      "target": "sleepy maple",
+      "value": 1
+    },
+    {
+      "source": "sly fern",
+      "target": "wild willow",
+      "value": 3
+    },
+    {
+      "source": "sly fern",
+      "target": "swift river",
+      "value": 3
+    },
+    {
+      "source": "sly fern",
+      "target": "swift cloud",
+      "value": 3
+    },
+    {
+      "source": "sly fern",
+      "target": "ancient wind",
+      "value": 4
+    },
+    {
+      "source": "gentle moss",
+      "target": "swift fox",
+      "value": 1
+    },
+    {
+      "source": "gentle moss",
+      "target": "witty moss",
+      "value": 2
+    },
+    {
+      "source": "gentle moss",
+      "target": "sly maple",
+      "value": 1
+    },
+    {
+      "source": "gentle moss",
+      "target": "sneaky sun",
+      "value": 1
+    },
+    {
+      "source": "brave fox",
+      "target": "fuzzy acorn",
+      "value": 4
+    },
+    {
+      "source": "brave fox",
+      "target": "lucky beetle",
+      "value": 3
+    },
+    {
+      "source": "brave fox",
+      "target": "ancient beetle",
+      "value": 3
+    },
+    {
+      "source": "brave fox",
+      "target": "sneaky fox",
+      "value": 1
+    },
+    {
+      "source": "brave fox",
+      "target": "sly river",
+      "value": 3
+    },
+    {
+      "source": "brave fox",
+      "target": "witty river",
+      "value": 4
+    },
+    {
+      "source": "ancient oak",
+      "target": "sneaky fern",
+      "value": 2
+    },
+    {
+      "source": "ancient oak",
+      "target": "happy stone",
+      "value": 3
+    },
+    {
+      "source": "ancient oak",
+      "target": "shiny feather",
+      "value": 1
+    },
+    {
+      "source": "ancient oak",
+      "target": "happy cloud",
+      "value": 1
+    },
+    {
+      "source": "ancient oak",
+      "target": "curious river",
+      "value": 2
+    },
+    {
+      "source": "ancient oak",
+      "target": "wild feather",
+      "value": 2
+    },
+    {
+      "source": "sly wind",
+      "target": "wild oak",
+      "value": 2
+    },
+    {
+      "source": "sly wind",
+      "target": "sly cloud",
+      "value": 1
+    },
+    {
+      "source": "sly wind",
+      "target": "lucky feather",
+      "value": 1
+    },
+    {
+      "source": "sly wind",
+      "target": "sneaky feather",
+      "value": 1
+    },
+    {
+      "source": "sly wind",
+      "target": "curious beetle",
+      "value": 1
+    },
+    {
+      "source": "wild fox",
+      "target": "sleepy badger",
+      "value": 2
+    },
+    {
+      "source": "brave wind",
+      "target": "swift river",
+      "value": 3
+    },
+    {
+      "source": "brave wind",
+      "target": "swift fern",
+      "value": 4
+    },
+    {
+      "source": "brave wind",
+      "target": "ancient badger",
+      "value": 4
+    },
+    {
+      "source": "brave wind",
+      "target": "wild cloud",
+      "value": 2
+    },
+    {
+      "source": "brave wind",
+      "target": "witty maple",
+      "value": 2
+    },
+    {
+      "source": "happy pecan",
+      "target": "witty maple",
+      "value": 3
+    },
+    {
+      "source": "swift moss",
+      "target": "sleepy sun",
+      "value": 2
+    },
+    {
+      "source": "swift moss",
+      "target": "brave feather",
+      "value": 4
+    },
+    {
+      "source": "swift moss",
+      "target": "lucky pecan",
+      "value": 2
+    },
+    {
+      "source": "swift fox",
+      "target": "sneaky badger",
+      "value": 1
+    },
+    {
+      "source": "swift fox",
+      "target": "curious acorn",
+      "value": 4
+    },
+    {
+      "source": "swift fox",
+      "target": "brave acorn",
+      "value": 2
+    },
+    {
+      "source": "swift fox",
+      "target": "gentle badger",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "lucky wind",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "fuzzy cloud",
+      "value": 4
+    },
+    {
+      "source": "curious river",
+      "target": "sly acorn",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "sleepy wind",
+      "value": 1
+    },
+    {
+      "source": "curious river",
+      "target": "sleepy badger",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "nimble badger",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "sly stone",
+      "value": 3
+    },
+    {
+      "source": "curious river",
+      "target": "gentle stone",
+      "value": 4
+    },
+    {
+      "source": "curious river",
+      "target": "gentle acorn",
+      "value": 3
+    },
+    {
+      "source": "nimble beetle",
+      "target": "shiny wind",
+      "value": 2
+    },
+    {
+      "source": "nimble beetle",
+      "target": "shiny moss",
+      "value": 3
+    },
+    {
+      "source": "nimble beetle",
+      "target": "brave river",
+      "value": 2
+    },
+    {
+      "source": "nimble beetle",
+      "target": "curious pecan",
+      "value": 1
+    },
+    {
+      "source": "nimble beetle",
+      "target": "witty oak",
+      "value": 2
+    },
+    {
+      "source": "nimble beetle",
+      "target": "sleepy fox",
+      "value": 2
+    },
+    {
+      "source": "quiet badger",
+      "target": "fuzzy sun",
+      "value": 3
+    },
+    {
+      "source": "quiet badger",
+      "target": "sleepy badger",
+      "value": 3
+    },
+    {
+      "source": "shiny river",
+      "target": "wild fox",
+      "value": 3
+    },
+    {
+      "source": "shiny river",
+      "target": "curious oak",
+      "value": 2
+    },
+    {
+      "source": "shiny river",
+      "target": "sleepy cloud",
+      "value": 2
+    },
+    {
+      "source": "wild badger",
+      "target": "gentle moss",
+      "value": 3
+    },
+    {
+      "source": "wild badger",
+      "target": "swift sun",
+      "value": 2
+    },
+    {
+      "source": "curious sun",
+      "target": "witty beetle",
+      "value": 4
+    },
+    {
+      "source": "curious sun",
+      "target": "ancient willow",
+      "value": 2
+    },
+    {
+      "source": "ancient moss",
+      "target": "wild cloud",
+      "value": 4
+    },
+    {
+      "source": "ancient moss",
+      "target": "sneaky oak",
+      "value": 3
+    },
+    {
+      "source": "ancient moss",
+      "target": "brave pecan",
+      "value": 3
+    },
+    {
+      "source": "ancient moss",
+      "target": "lucky badger",
+      "value": 1
+    },
+    {
+      "source": "ancient moss",
+      "target": "fuzzy willow",
+      "value": 4
+    },
+    {
+      "source": "fuzzy oak",
+      "target": "nimble willow",
+      "value": 4
+    },
+    {
+      "source": "shiny fern",
+      "target": "sleepy feather",
+      "value": 3
+    },
+    {
+      "source": "shiny fern",
+      "target": "shiny wind",
+      "value": 3
+    },
+    {
+      "source": "shiny fern",
+      "target": "witty willow",
+      "value": 2
+    },
+    {
+      "source": "shiny fern",
+      "target": "sleepy maple",
+      "value": 1
+    },
+    {
+      "source": "witty willow",
+      "target": "nimble oak",
+      "value": 2
+    },
+    {
+      "source": "witty willow",
+      "target": "shiny river",
+      "value": 2
+    },
+    {
+      "source": "witty willow",
+      "target": "quiet feather",
+      "value": 2
+    },
+    {
+      "source": "witty willow",
+      "target": "swift maple",
+      "value": 2
+    },
+    {
+      "source": "witty willow",
+      "target": "nimble fox",
+      "value": 3
+    },
+    {
+      "source": "witty willow",
+      "target": "shiny wind",
+      "value": 1
+    },
+    {
+      "source": "shiny fox",
+      "target": "shiny cloud",
+      "value": 2
+    },
+    {
+      "source": "shiny fox",
+      "target": "witty moss",
+      "value": 2
+    },
+    {
+      "source": "shiny fox",
+      "target": "nimble feather",
+      "value": 2
+    },
+    {
+      "source": "shiny fox",
+      "target": "sleepy feather",
+      "value": 2
+    },
+    {
+      "source": "shiny fox",
+      "target": "brave fern",
+      "value": 1
+    },
+    {
+      "source": "brave oak",
+      "target": "wild oak",
+      "value": 4
+    },
+    {
+      "source": "brave oak",
+      "target": "sneaky fern",
+      "value": 4
+    },
+    {
+      "source": "brave oak",
+      "target": "sleepy cloud",
+      "value": 1
+    },
+    {
+      "source": "brave oak",
+      "target": "sly maple",
+      "value": 3
+    },
+    {
+      "source": "brave oak",
+      "target": "fuzzy fern",
+      "value": 3
+    },
+    {
+      "source": "brave oak",
+      "target": "ancient beetle",
+      "value": 3
+    },
+    {
+      "source": "brave oak",
+      "target": "gentle stone",
+      "value": 1
+    },
+    {
+      "source": "brave oak",
+      "target": "sly fern",
+      "value": 4
+    },
+    {
+      "source": "curious wind",
+      "target": "swift stone",
+      "value": 3
+    },
+    {
+      "source": "quiet cloud",
+      "target": "quiet feather",
+      "value": 2
+    },
+    {
+      "source": "quiet cloud",
+      "target": "nimble fox",
+      "value": 3
+    },
+    {
+      "source": "swift fern",
+      "target": "quiet oak",
+      "value": 3
+    },
+    {
+      "source": "swift fern",
+      "target": "brave wind",
+      "value": 1
+    },
+    {
+      "source": "wild sun",
+      "target": "brave pecan",
+      "value": 2
+    },
+    {
+      "source": "wild sun",
+      "target": "nimble wind",
+      "value": 1
+    },
+    {
+      "source": "wild sun",
+      "target": "sly badger",
+      "value": 3
+    },
+    {
+      "source": "wild sun",
+      "target": "ancient beetle",
+      "value": 1
+    },
+    {
+      "source": "wild sun",
+      "target": "curious oak",
+      "value": 1
+    },
+    {
+      "source": "wild sun",
+      "target": "witty pecan",
+      "value": 3
+    },
+    {
+      "source": "wild sun",
+      "target": "sleepy oak",
+      "value": 3
+    },
+    {
+      "source": "swift feather",
+      "target": "gentle wind",
+      "value": 4
+    },
+    {
+      "source": "swift feather",
+      "target": "sneaky fern",
+      "value": 2
+    },
+    {
+      "source": "swift feather",
+      "target": "lucky beetle",
+      "value": 1
+    },
+    {
+      "source": "swift feather",
+      "target": "sly maple",
+      "value": 4
+    },
+    {
+      "source": "wild beetle",
+      "target": "lucky willow",
+      "value": 3
+    },
+    {
+      "source": "wild beetle",
+      "target": "shiny fern",
+      "value": 1
+    },
+    {
+      "source": "wild beetle",
+      "target": "gentle cloud",
+      "value": 4
+    },
+    {
+      "source": "wild beetle",
+      "target": "happy beetle",
+      "value": 2
+    },
+    {
+      "source": "wild beetle",
+      "target": "swift moss",
+      "value": 3
+    },
+    {
+      "source": "wild beetle",
+      "target": "witty badger",
+      "value": 2
+    },
+    {
+      "source": "wild beetle",
+      "target": "nimble feather",
+      "value": 1
+    },
+    {
+      "source": "wild beetle",
+      "target": "witty fern",
+      "value": 4
+    },
+    {
+      "source": "curious pecan",
+      "target": "gentle beetle",
+      "value": 3
+    },
+    {
+      "source": "curious pecan",
+      "target": "brave beetle",
+      "value": 4
+    },
+    {
+      "source": "curious pecan",
+      "target": "wild wind",
+      "value": 1
+    },
+    {
+      "source": "sneaky feather",
+      "target": "nimble sun",
+      "value": 1
+    },
+    {
+      "source": "sneaky feather",
+      "target": "swift pecan",
+      "value": 2
+    },
+    {
+      "source": "sneaky feather",
+      "target": "lucky beetle",
+      "value": 4
+    },
+    {
+      "source": "sneaky feather",
+      "target": "quiet oak",
+      "value": 3
+    },
+    {
+      "source": "lucky beetle",
+      "target": "quiet sun",
+      "value": 2
+    },
+    {
+      "source": "lucky beetle",
+      "target": "happy badger",
+      "value": 3
+    },
+    {
+      "source": "lucky beetle",
+      "target": "nimble moss",
+      "value": 1
+    },
+    {
+      "source": "lucky beetle",
+      "target": "lucky cloud",
+      "value": 2
+    },
+    {
+      "source": "gentle oak",
+      "target": "quiet fern",
+      "value": 3
+    },
+    {
+      "source": "happy beetle",
+      "target": "witty willow",
+      "value": 2
+    },
+    {
+      "source": "curious moss",
+      "target": "swift river",
+      "value": 3
+    },
+    {
+      "source": "curious moss",
+      "target": "fuzzy stone",
+      "value": 3
+    },
+    {
+      "source": "curious moss",
+      "target": "fuzzy feather",
+      "value": 3
+    },
+    {
+      "source": "lucky oak",
+      "target": "gentle feather",
+      "value": 3
+    },
+    {
+      "source": "lucky oak",
+      "target": "sneaky badger",
+      "value": 3
+    },
+    {
+      "source": "gentle pecan",
+      "target": "wild moss",
+      "value": 1
+    },
+    {
+      "source": "gentle pecan",
+      "target": "quiet wind",
+      "value": 2
+    },
+    {
+      "source": "gentle pecan",
+      "target": "gentle fern",
+      "value": 2
+    },
+    {
+      "source": "gentle pecan",
+      "target": "nimble willow",
+      "value": 2
+    },
+    {
+      "source": "gentle pecan",
+      "target": "wild acorn",
+      "value": 3
+    },
+    {
+      "source": "gentle pecan",
+      "target": "brave fox",
+      "value": 2
+    },
+    {
+      "source": "wild moss",
+      "target": "brave oak",
+      "value": 4
+    },
+    {
+      "source": "wild moss",
+      "target": "sneaky sun",
+      "value": 2
+    },
+    {
+      "source": "wild moss",
+      "target": "wild maple",
+      "value": 2
+    },
+    {
+      "source": "happy stone",
+      "target": "swift cloud",
+      "value": 3
+    },
+    {
+      "source": "happy stone",
+      "target": "fuzzy badger",
+      "value": 4
+    },
+    {
+      "source": "happy stone",
+      "target": "sneaky willow",
+      "value": 4
+    },
+    {
+      "source": "happy stone",
+      "target": "shiny sun",
+      "value": 3
+    },
+    {
+      "source": "happy stone",
+      "target": "swift acorn",
+      "value": 3
+    },
+    {
+      "source": "gentle feather",
+      "target": "gentle acorn",
+      "value": 4
+    },
+    {
+      "source": "gentle feather",
+      "target": "quiet willow",
+      "value": 1
+    },
+    {
+      "source": "witty moss",
+      "target": "swift stone",
+      "value": 3
+    },
+    {
+      "source": "witty moss",
+      "target": "swift cloud",
+      "value": 2
+    },
+    {
+      "source": "witty moss",
+      "target": "swift willow",
+      "value": 2
+    },
+    {
+      "source": "witty moss",
+      "target": "curious maple",
+      "value": 1
+    },
+    {
+      "source": "witty moss",
+      "target": "sly badger",
+      "value": 4
+    },
+    {
+      "source": "witty moss",
+      "target": "sleepy moss",
+      "value": 4
+    },
+    {
+      "source": "curious willow",
+      "target": "curious feather",
+      "value": 3
+    },
+    {
+      "source": "quiet fox",
+      "target": "lucky badger",
+      "value": 4
+    },
+    {
+      "source": "quiet fox",
+      "target": "sleepy willow",
+      "value": 4
+    },
+    {
+      "source": "quiet fox",
+      "target": "shiny moss",
+      "value": 4
+    },
+    {
+      "source": "quiet fox",
+      "target": "gentle moss",
+      "value": 1
+    },
+    {
+      "source": "quiet fox",
+      "target": "curious moss",
+      "value": 2
+    },
+    {
+      "source": "ancient maple",
+      "target": "wild pecan",
+      "value": 3
+    },
+    {
+      "source": "ancient maple",
+      "target": "brave fern",
+      "value": 2
+    },
+    {
+      "source": "ancient maple",
+      "target": "happy acorn",
+      "value": 3
+    },
+    {
+      "source": "ancient maple",
+      "target": "ancient wind",
+      "value": 4
+    },
+    {
+      "source": "ancient maple",
+      "target": "sleepy cloud",
+      "value": 4
+    },
+    {
+      "source": "ancient maple",
+      "target": "lucky pecan",
+      "value": 2
+    },
+    {
+      "source": "ancient maple",
+      "target": "witty willow",
+      "value": 1
+    },
+    {
+      "source": "shiny oak",
+      "target": "sleepy river",
+      "value": 4
+    },
+    {
+      "source": "shiny oak",
+      "target": "lucky feather",
+      "value": 2
+    },
+    {
+      "source": "shiny oak",
+      "target": "fuzzy moss",
+      "value": 2
+    },
+    {
+      "source": "shiny oak",
+      "target": "sneaky cloud",
+      "value": 3
+    },
+    {
+      "source": "shiny oak",
+      "target": "sneaky badger",
+      "value": 3
+    },
+    {
+      "source": "shiny oak",
+      "target": "curious sun",
+      "value": 1
+    },
+    {
+      "source": "shiny oak",
+      "target": "witty beetle",
+      "value": 2
+    },
+    {
+      "source": "shiny oak",
+      "target": "sleepy feather",
+      "value": 3
+    },
+    {
+      "source": "swift maple",
+      "target": "nimble sun",
+      "value": 2
+    },
+    {
+      "source": "swift maple",
+      "target": "shiny beetle",
+      "value": 3
+    },
+    {
+      "source": "swift maple",
+      "target": "nimble acorn",
+      "value": 1
+    },
+    {
+      "source": "happy sun",
+      "target": "swift cloud",
+      "value": 3
+    },
+    {
+      "source": "happy sun",
+      "target": "quiet fox",
+      "value": 2
+    },
+    {
+      "source": "sly sun",
+      "target": "shiny pecan",
+      "value": 3
+    },
+    {
+      "source": "sly sun",
+      "target": "happy badger",
+      "value": 3
+    },
+    {
+      "source": "sly sun",
+      "target": "nimble maple",
+      "value": 3
+    },
+    {
+      "source": "shiny wind",
+      "target": "fuzzy sun",
+      "value": 2
+    },
+    {
+      "source": "shiny wind",
+      "target": "witty moss",
+      "value": 1
+    },
+    {
+      "source": "shiny wind",
+      "target": "ancient pecan",
+      "value": 4
+    },
+    {
+      "source": "shiny wind",
+      "target": "nimble fern",
+      "value": 2
+    },
+    {
+      "source": "shiny wind",
+      "target": "sly oak",
+      "value": 2
+    },
+    {
+      "source": "shiny wind",
+      "target": "happy badger",
+      "value": 4
+    },
+    {
+      "source": "quiet river",
+      "target": "nimble oak",
+      "value": 4
+    },
+    {
+      "source": "ancient fern",
+      "target": "lucky beetle",
+      "value": 1
+    },
+    {
+      "source": "ancient fern",
+      "target": "witty river",
+      "value": 2
+    },
+    {
+      "source": "sleepy willow",
+      "target": "sneaky fox",
+      "value": 2
+    },
+    {
+      "source": "sleepy willow",
+      "target": "brave badger",
+      "value": 2
+    },
+    {
+      "source": "brave maple",
+      "target": "lucky acorn",
+      "value": 2
+    },
+    {
+      "source": "brave maple",
+      "target": "sneaky acorn",
+      "value": 2
+    },
+    {
+      "source": "brave maple",
+      "target": "gentle fox",
+      "value": 4
+    },
+    {
+      "source": "brave maple",
+      "target": "swift oak",
+      "value": 1
+    },
+    {
+      "source": "brave maple",
+      "target": "shiny beetle",
+      "value": 2
+    },
+    {
+      "source": "brave maple",
+      "target": "nimble sun",
+      "value": 1
+    },
+    {
+      "source": "brave maple",
+      "target": "sleepy cloud",
+      "value": 3
+    },
+    {
+      "source": "brave maple",
+      "target": "sneaky cloud",
+      "value": 4
+    },
+    {
+      "source": "wild river",
+      "target": "sleepy feather",
+      "value": 3
+    },
+    {
+      "source": "wild river",
+      "target": "ancient feather",
+      "value": 2
+    },
+    {
+      "source": "wild river",
+      "target": "quiet cloud",
+      "value": 4
+    },
+    {
+      "source": "wild river",
+      "target": "sneaky sun",
+      "value": 2
+    },
+    {
+      "source": "wild river",
+      "target": "curious maple",
+      "value": 2
+    },
+    {
+      "source": "wild river",
+      "target": "sleepy fox",
+      "value": 4
+    },
+    {
+      "source": "ancient willow",
+      "target": "sleepy maple",
+      "value": 4
+    },
+    {
+      "source": "ancient willow",
+      "target": "curious fox",
+      "value": 4
+    },
+    {
+      "source": "ancient willow",
+      "target": "fuzzy willow",
+      "value": 3
+    },
+    {
+      "source": "ancient willow",
+      "target": "brave badger",
+      "value": 1
+    },
+    {
+      "source": "ancient willow",
+      "target": "quiet maple",
+      "value": 1
+    },
+    {
+      "source": "sly feather",
+      "target": "lucky acorn",
+      "value": 4
+    },
+    {
+      "source": "sly feather",
+      "target": "swift badger",
+      "value": 4
+    },
+    {
+      "source": "sly feather",
+      "target": "shiny stone",
+      "value": 4
+    },
+    {
+      "source": "sly feather",
+      "target": "sly sun",
+      "value": 2
+    },
+    {
+      "source": "sly feather",
+      "target": "swift cloud",
+      "value": 4
+    },
+    {
+      "source": "fuzzy fox",
+      "target": "sneaky oak",
+      "value": 3
+    },
+    {
+      "source": "fuzzy fox",
+      "target": "fuzzy oak",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fox",
+      "target": "shiny river",
+      "value": 4
+    },
+    {
+      "source": "fuzzy fox",
+      "target": "gentle sun",
+      "value": 2
+    },
+    {
+      "source": "fuzzy fox",
+      "target": "curious acorn",
+      "value": 2
+    },
+    {
+      "source": "quiet wind",
+      "target": "witty oak",
+      "value": 1
+    },
+    {
+      "source": "quiet wind",
+      "target": "fuzzy feather",
+      "value": 1
+    },
+    {
+      "source": "quiet feather",
+      "target": "gentle fern",
+      "value": 3
+    },
+    {
+      "source": "quiet feather",
+      "target": "witty moss",
+      "value": 4
+    },
+    {
+      "source": "quiet feather",
+      "target": "brave feather",
+      "value": 4
+    },
+    {
+      "source": "fuzzy cloud",
+      "target": "swift cloud",
+      "value": 4
+    },
+    {
+      "source": "fuzzy cloud",
+      "target": "nimble beetle",
+      "value": 3
+    },
+    {
+      "source": "fuzzy cloud",
+      "target": "sneaky badger",
+      "value": 2
+    },
+    {
+      "source": "fuzzy cloud",
+      "target": "lucky acorn",
+      "value": 1
+    },
+    {
+      "source": "fuzzy cloud",
+      "target": "sneaky fox",
+      "value": 1
+    },
+    {
+      "source": "ancient cloud",
+      "target": "fuzzy wind",
+      "value": 1
+    },
+    {
+      "source": "ancient cloud",
+      "target": "sly oak",
+      "value": 1
+    },
+    {
+      "source": "ancient cloud",
+      "target": "swift maple",
+      "value": 3
+    },
+    {
+      "source": "ancient cloud",
+      "target": "curious willow",
+      "value": 3
+    },
+    {
+      "source": "ancient cloud",
+      "target": "witty cloud",
+      "value": 1
+    },
+    {
+      "source": "ancient cloud",
+      "target": "sly sun",
+      "value": 1
+    },
+    {
+      "source": "shiny cloud",
+      "target": "sly stone",
+      "value": 3
+    },
+    {
+      "source": "shiny cloud",
+      "target": "nimble wind",
+      "value": 3
+    },
+    {
+      "source": "shiny cloud",
+      "target": "gentle willow",
+      "value": 2
+    },
+    {
+      "source": "shiny cloud",
+      "target": "happy pecan",
+      "value": 3
+    },
+    {
+      "source": "nimble willow",
+      "target": "swift wind",
+      "value": 1
+    },
+    {
+      "source": "nimble willow",
+      "target": "nimble beetle",
+      "value": 4
+    },
+    {
+      "source": "nimble willow",
+      "target": "shiny acorn",
+      "value": 2
+    },
+    {
+      "source": "nimble willow",
+      "target": "wild river",
+      "value": 4
+    },
+    {
+      "source": "nimble willow",
+      "target": "sleepy moss",
+      "value": 3
+    },
+    {
+      "source": "nimble willow",
+      "target": "sleepy beetle",
+      "value": 4
+    },
+    {
+      "source": "wild willow",
+      "target": "happy oak",
+      "value": 3
+    },
+    {
+      "source": "wild willow",
+      "target": "witty acorn",
+      "value": 1
+    },
+    {
+      "source": "wild willow",
+      "target": "brave acorn",
+      "value": 3
+    },
+    {
+      "source": "wild willow",
+      "target": "witty maple",
+      "value": 1
+    },
+    {
+      "source": "wild willow",
+      "target": "brave pecan",
+      "value": 2
+    },
+    {
+      "source": "wild willow",
+      "target": "gentle beetle",
+      "value": 1
+    },
+    {
+      "source": "fuzzy stone",
+      "target": "gentle fox",
+      "value": 1
+    },
+    {
+      "source": "fuzzy stone",
+      "target": "brave wind",
+      "value": 4
+    },
+    {
+      "source": "fuzzy stone",
+      "target": "curious cloud",
+      "value": 3
+    },
+    {
+      "source": "fuzzy stone",
+      "target": "wild willow",
+      "value": 1
+    },
+    {
+      "source": "sleepy maple",
+      "target": "sly maple",
+      "value": 2
+    },
+    {
+      "source": "sleepy maple",
+      "target": "swift moss",
+      "value": 4
+    },
+    {
+      "source": "sleepy maple",
+      "target": "swift badger",
+      "value": 1
+    },
+    {
+      "source": "sleepy maple",
+      "target": "shiny pecan",
+      "value": 2
+    },
+    {
+      "source": "sleepy maple",
+      "target": "fuzzy acorn",
+      "value": 3
+    },
+    {
+      "source": "sleepy maple",
+      "target": "sly river",
+      "value": 4
+    },
+    {
+      "source": "sleepy maple",
+      "target": "swift cloud",
+      "value": 1
+    },
+    {
+      "source": "sleepy maple",
+      "target": "lucky acorn",
+      "value": 2
+    },
+    {
+      "source": "sleepy maple",
+      "target": "sneaky fox",
+      "value": 2
+    },
+    {
+      "source": "gentle acorn",
+      "target": "happy feather",
+      "value": 3
+    },
+    {
+      "source": "gentle acorn",
+      "target": "witty stone",
+      "value": 3
+    },
+    {
+      "source": "gentle acorn",
+      "target": "brave moss",
+      "value": 3
+    },
+    {
+      "source": "gentle acorn",
+      "target": "swift wind",
+      "value": 3
+    },
+    {
+      "source": "gentle acorn",
+      "target": "sneaky acorn",
+      "value": 2
+    },
+    {
+      "source": "gentle acorn",
+      "target": "sly sun",
+      "value": 1
+    },
+    {
+      "source": "gentle acorn",
+      "target": "ancient badger",
+      "value": 4
+    },
+    {
+      "source": "gentle acorn",
+      "target": "curious beetle",
+      "value": 3
+    },
+    {
+      "source": "witty pecan",
+      "target": "sneaky fern",
+      "value": 1
+    },
+    {
+      "source": "witty pecan",
+      "target": "lucky beetle",
+      "value": 4
+    },
+    {
+      "source": "nimble cloud",
+      "target": "fuzzy pecan",
+      "value": 3
+    },
+    {
+      "source": "nimble cloud",
+      "target": "happy maple",
+      "value": 4
+    },
+    {
+      "source": "nimble cloud",
+      "target": "gentle willow",
+      "value": 2
+    },
+    {
+      "source": "nimble cloud",
+      "target": "witty wind",
+      "value": 2
+    },
+    {
+      "source": "sly willow",
+      "target": "swift beetle",
+      "value": 1
+    },
+    {
+      "source": "sly willow",
+      "target": "ancient willow",
+      "value": 4
+    },
+    {
+      "source": "sly willow",
+      "target": "curious feather",
+      "value": 2
+    },
+    {
+      "source": "swift river",
+      "target": "witty willow",
+      "value": 2
+    },
+    {
+      "source": "swift river",
+      "target": "swift willow",
+      "value": 1
+    },
+    {
+      "source": "swift river",
+      "target": "gentle beetle",
+      "value": 1
+    },
+    {
+      "source": "swift river",
+      "target": "sleepy wind",
+      "value": 1
+    },
+    {
+      "source": "swift river",
+      "target": "sly feather",
+      "value": 3
+    },
+    {
+      "source": "wild cloud",
+      "target": "nimble feather",
+      "value": 1
+    },
+    {
+      "source": "wild cloud",
+      "target": "nimble sun",
+      "value": 4
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "ancient stone",
+      "value": 3
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "ancient acorn",
+      "value": 2
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "nimble fox",
+      "value": 3
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "sleepy beetle",
+      "value": 4
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "fuzzy stone",
+      "value": 4
+    },
+    {
+      "source": "sneaky pecan",
+      "target": "swift moss",
+      "value": 1
+    },
+    {
+      "source": "nimble wind",
+      "target": "witty maple",
+      "value": 3
+    },
+    {
+      "source": "nimble wind",
+      "target": "sneaky river",
+      "value": 4
+    },
+    {
+      "source": "nimble wind",
+      "target": "curious river",
+      "value": 3
+    },
+    {
+      "source": "nimble wind",
+      "target": "swift beetle",
+      "value": 3
+    },
+    {
+      "source": "nimble wind",
+      "target": "witty beetle",
+      "value": 3
+    },
+    {
+      "source": "fuzzy river",
+      "target": "shiny oak",
+      "value": 2
+    },
+    {
+      "source": "fuzzy river",
+      "target": "fuzzy sun",
+      "value": 3
+    },
+    {
+      "source": "fuzzy river",
+      "target": "swift cloud",
+      "value": 2
+    },
+    {
+      "source": "fuzzy river",
+      "target": "ancient sun",
+      "value": 4
+    },
+    {
+      "source": "fuzzy river",
+      "target": "fuzzy fox",
+      "value": 4
+    },
+    {
+      "source": "fuzzy river",
+      "target": "nimble wind",
+      "value": 2
+    },
+    {
+      "source": "fuzzy river",
+      "target": "gentle oak",
+      "value": 1
+    },
+    {
+      "source": "fuzzy river",
+      "target": "shiny beetle",
+      "value": 1
+    },
+    {
+      "source": "swift cloud",
+      "target": "shiny maple",
+      "value": 3
+    },
+    {
+      "source": "swift cloud",
+      "target": "sneaky sun",
+      "value": 2
+    },
+    {
+      "source": "swift cloud",
+      "target": "swift moss",
+      "value": 1
+    },
+    {
+      "source": "swift cloud",
+      "target": "ancient fox",
+      "value": 1
+    },
+    {
+      "source": "swift cloud",
+      "target": "shiny acorn",
+      "value": 4
+    },
+    {
+      "source": "ancient fox",
+      "target": "sleepy willow",
+      "value": 2
+    },
+    {
+      "source": "ancient fox",
+      "target": "happy beetle",
+      "value": 4
+    },
+    {
+      "source": "ancient fox",
+      "target": "happy oak",
+      "value": 4
+    },
+    {
+      "source": "ancient fox",
+      "target": "sneaky cloud",
+      "value": 2
+    },
+    {
+      "source": "happy fox",
+      "target": "nimble wind",
+      "value": 1
+    },
+    {
+      "source": "happy fox",
+      "target": "lucky pecan",
+      "value": 4
+    },
+    {
+      "source": "happy fox",
+      "target": "sleepy oak",
+      "value": 2
+    },
+    {
+      "source": "happy fox",
+      "target": "gentle cloud",
+      "value": 1
+    },
+    {
+      "source": "happy fox",
+      "target": "swift oak",
+      "value": 1
+    },
+    {
+      "source": "quiet maple",
+      "target": "sleepy sun",
+      "value": 2
+    },
+    {
+      "source": "quiet maple",
+      "target": "sleepy moss",
+      "value": 4
+    },
+    {
+      "source": "quiet maple",
+      "target": "fuzzy pecan",
+      "value": 1
+    },
+    {
+      "source": "quiet maple",
+      "target": "gentle oak",
+      "value": 2
+    },
+    {
+      "source": "wild fern",
+      "target": "shiny stone",
+      "value": 4
+    },
+    {
+      "source": "curious cloud",
+      "target": "fuzzy stone",
+      "value": 1
+    },
+    {
+      "source": "curious cloud",
+      "target": "quiet acorn",
+      "value": 3
+    },
+    {
+      "source": "curious cloud",
+      "target": "shiny willow",
+      "value": 3
+    },
+    {
+      "source": "curious cloud",
+      "target": "sly willow",
+      "value": 4
+    },
+    {
+      "source": "curious cloud",
+      "target": "nimble fox",
+      "value": 1
+    },
+    {
+      "source": "curious cloud",
+      "target": "witty beetle",
+      "value": 3
+    },
+    {
+      "source": "witty cloud",
+      "target": "sneaky river",
+      "value": 3
+    },
+    {
+      "source": "witty cloud",
+      "target": "sleepy river",
+      "value": 4
+    },
+    {
+      "source": "witty cloud",
+      "target": "lucky fox",
+      "value": 4
+    },
+    {
+      "source": "witty cloud",
+      "target": "sly maple",
+      "value": 3
+    },
+    {
+      "source": "witty stone",
+      "target": "quiet wind",
+      "value": 3
+    },
+    {
+      "source": "witty stone",
+      "target": "shiny stone",
+      "value": 4
+    },
+    {
+      "source": "witty stone",
+      "target": "shiny fox",
+      "value": 4
+    },
+    {
+      "source": "witty stone",
+      "target": "curious sun",
+      "value": 2
+    },
+    {
+      "source": "witty stone",
+      "target": "sly cloud",
+      "value": 1
+    },
+    {
+      "source": "witty stone",
+      "target": "quiet fox",
+      "value": 3
+    },
+    {
+      "source": "gentle beetle",
+      "target": "witty river",
+      "value": 2
+    },
+    {
+      "source": "gentle beetle",
+      "target": "lucky acorn",
+      "value": 3
+    },
+    {
+      "source": "gentle beetle",
+      "target": "witty fern",
+      "value": 2
+    },
+    {
+      "source": "wild stone",
+      "target": "swift badger",
+      "value": 1
+    },
+    {
+      "source": "wild stone",
+      "target": "sneaky oak",
+      "value": 2
+    },
+    {
+      "source": "wild stone",
+      "target": "gentle acorn",
+      "value": 4
+    },
+    {
+      "source": "wild stone",
+      "target": "wild acorn",
+      "value": 4
+    },
+    {
+      "source": "wild stone",
+      "target": "witty fox",
+      "value": 3
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "quiet feather",
+      "value": 4
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "curious wind",
+      "value": 2
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "wild fern",
+      "value": 4
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "sleepy sun",
+      "value": 4
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "ancient fern",
+      "value": 4
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "shiny maple",
+      "value": 4
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "wild acorn",
+      "value": 2
+    },
+    {
+      "source": "sneaky beetle",
+      "target": "sly willow",
+      "value": 3
+    },
+    {
+      "source": "happy river",
+      "target": "gentle sun",
+      "value": 4
+    },
+    {
+      "source": "happy river",
+      "target": "sly willow",
+      "value": 2
+    },
+    {
+      "source": "happy river",
+      "target": "happy maple",
+      "value": 3
+    },
+    {
+      "source": "happy river",
+      "target": "brave badger",
+      "value": 4
+    },
+    {
+      "source": "happy river",
+      "target": "lucky oak",
+      "value": 2
+    },
+    {
+      "source": "sneaky fox",
+      "target": "fuzzy wind",
+      "value": 2
+    },
+    {
+      "source": "sneaky fox",
+      "target": "nimble fern",
+      "value": 3
+    },
+    {
+      "source": "sneaky fox",
+      "target": "shiny fern",
+      "value": 3
+    },
+    {
+      "source": "brave stone",
+      "target": "shiny maple",
+      "value": 1
+    },
+    {
+      "source": "brave stone",
+      "target": "witty sun",
+      "value": 1
+    },
+    {
+      "source": "brave stone",
+      "target": "sleepy sun",
+      "value": 2
+    },
+    {
+      "source": "brave stone",
+      "target": "wild sun",
+      "value": 1
+    },
+    {
+      "source": "gentle river",
+      "target": "ancient wind",
+      "value": 3
+    },
+    {
+      "source": "gentle river",
+      "target": "curious stone",
+      "value": 4
+    },
+    {
+      "source": "gentle river",
+      "target": "swift acorn",
+      "value": 2
+    },
+    {
+      "source": "gentle river",
+      "target": "sly pecan",
+      "value": 2
+    },
+    {
+      "source": "gentle river",
+      "target": "nimble maple",
+      "value": 4
+    },
+    {
+      "source": "gentle river",
+      "target": "lucky feather",
+      "value": 2
+    },
+    {
+      "source": "gentle river",
+      "target": "nimble beetle",
+      "value": 1
+    },
+    {
+      "source": "witty acorn",
+      "target": "witty cloud",
+      "value": 2
+    },
+    {
+      "source": "witty acorn",
+      "target": "curious moss",
+      "value": 3
+    },
+    {
+      "source": "witty acorn",
+      "target": "gentle oak",
+      "value": 4
+    },
+    {
+      "source": "witty acorn",
+      "target": "swift pecan",
+      "value": 2
+    },
+    {
+      "source": "happy cloud",
+      "target": "brave badger",
+      "value": 1
+    },
+    {
+      "source": "happy cloud",
+      "target": "curious sun",
+      "value": 3
+    },
+    {
+      "source": "happy cloud",
+      "target": "shiny wind",
+      "value": 1
+    },
+    {
+      "source": "happy cloud",
+      "target": "sleepy fox",
+      "value": 4
+    },
+    {
+      "source": "quiet oak",
+      "target": "happy cloud",
+      "value": 1
+    },
+    {
+      "source": "quiet oak",
+      "target": "sneaky feather",
+      "value": 4
+    },
+    {
+      "source": "quiet oak",
+      "target": "witty wind",
+      "value": 2
+    },
+    {
+      "source": "quiet oak",
+      "target": "shiny fox",
+      "value": 3
+    },
+    {
+      "source": "quiet oak",
+      "target": "fuzzy acorn",
+      "value": 4
+    },
+    {
+      "source": "quiet oak",
+      "target": "happy feather",
+      "value": 1
+    },
+    {
+      "source": "quiet oak",
+      "target": "sly acorn",
+      "value": 1
+    },
+    {
+      "source": "sleepy fox",
+      "target": "wild cloud",
+      "value": 1
+    },
+    {
+      "source": "sleepy fox",
+      "target": "brave cloud",
+      "value": 4
+    },
+    {
+      "source": "sleepy fox",
+      "target": "sleepy cloud",
+      "value": 2
+    },
+    {
+      "source": "sleepy fox",
+      "target": "gentle river",
+      "value": 2
+    },
+    {
+      "source": "sleepy fox",
+      "target": "swift fern",
+      "value": 2
+    },
+    {
+      "source": "sleepy fox",
+      "target": "fuzzy sun",
+      "value": 2
+    },
+    {
+      "source": "sneaky wind",
+      "target": "ancient moss",
+      "value": 2
+    },
+    {
+      "source": "sneaky wind",
+      "target": "lucky stone",
+      "value": 1
+    },
+    {
+      "source": "sleepy stone",
+      "target": "wild badger",
+      "value": 3
+    },
+    {
+      "source": "sleepy stone",
+      "target": "swift oak",
+      "value": 3
+    },
+    {
+      "source": "sleepy stone",
+      "target": "nimble sun",
+      "value": 4
+    },
+    {
+      "source": "sleepy stone",
+      "target": "gentle sun",
+      "value": 3
+    },
+    {
+      "source": "sleepy stone",
+      "target": "lucky willow",
+      "value": 1
+    },
+    {
+      "source": "sleepy stone",
+      "target": "fuzzy stone",
+      "value": 4
+    },
+    {
+      "source": "sleepy stone",
+      "target": "brave cloud",
+      "value": 1
+    },
+    {
+      "source": "sleepy stone",
+      "target": "lucky stone",
+      "value": 2
+    },
+    {
+      "source": "lucky pecan",
+      "target": "quiet maple",
+      "value": 1
+    },
+    {
+      "source": "lucky pecan",
+      "target": "quiet oak",
+      "value": 4
+    },
+    {
+      "source": "lucky pecan",
+      "target": "sneaky sun",
+      "value": 3
+    },
+    {
+      "source": "lucky pecan",
+      "target": "gentle sun",
+      "value": 4
+    },
+    {
+      "source": "sly oak",
+      "target": "fuzzy wind",
+      "value": 1
+    },
+    {
+      "source": "sly oak",
+      "target": "quiet sun",
+      "value": 1
+    },
+    {
+      "source": "sly oak",
+      "target": "brave fern",
+      "value": 1
+    },
+    {
+      "source": "sly oak",
+      "target": "sneaky oak",
+      "value": 3
+    },
+    {
+      "source": "witty beetle",
+      "target": "ancient pecan",
+      "value": 4
+    },
+    {
+      "source": "witty beetle",
+      "target": "sneaky willow",
+      "value": 2
+    },
+    {
+      "source": "witty beetle",
+      "target": "sneaky moss",
+      "value": 3
+    },
+    {
+      "source": "witty beetle",
+      "target": "swift stone",
+      "value": 1
+    },
+    {
+      "source": "witty beetle",
+      "target": "sly badger",
+      "value": 3
+    },
+    {
+      "source": "witty beetle",
+      "target": "lucky fern",
+      "value": 3
+    },
+    {
+      "source": "witty beetle",
+      "target": "swift cloud",
+      "value": 2
+    },
+    {
+      "source": "shiny acorn",
+      "target": "brave willow",
+      "value": 4
+    },
+    {
+      "source": "shiny acorn",
+      "target": "swift maple",
+      "value": 4
+    },
+    {
+      "source": "shiny acorn",
+      "target": "sneaky fern",
+      "value": 4
+    },
+    {
+      "source": "shiny acorn",
+      "target": "wild beetle",
+      "value": 2
+    },
+    {
+      "source": "shiny acorn",
+      "target": "lucky acorn",
+      "value": 3
+    },
+    {
+      "source": "shiny acorn",
+      "target": "brave feather",
+      "value": 4
+    },
+    {
+      "source": "shiny acorn",
+      "target": "lucky fox",
+      "value": 2
+    },
+    {
+      "source": "shiny acorn",
+      "target": "brave fern",
+      "value": 3
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "curious stone",
+      "value": 1
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "quiet cloud",
+      "value": 3
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "brave river",
+      "value": 3
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "shiny badger",
+      "value": 2
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "brave fox",
+      "value": 3
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "curious sun",
+      "value": 3
+    },
+    {
+      "source": "fuzzy moss",
+      "target": "sleepy fern",
+      "value": 3
+    },
+    {
+      "source": "lucky feather",
+      "target": "quiet fern",
+      "value": 1
+    },
+    {
+      "source": "lucky feather",
+      "target": "sleepy acorn",
+      "value": 1
+    },
+    {
+      "source": "lucky feather",
+      "target": "swift fox",
+      "value": 2
+    },
+    {
+      "source": "lucky feather",
+      "target": "fuzzy acorn",
+      "value": 3
+    },
+    {
+      "source": "lucky feather",
+      "target": "curious maple",
+      "value": 1
+    },
+    {
+      "source": "lucky feather",
+      "target": "lucky fern",
+      "value": 2
+    },
+    {
+      "source": "lucky feather",
+      "target": "sneaky fox",
+      "value": 1
+    },
+    {
+      "source": "lucky feather",
+      "target": "nimble fern",
+      "value": 4
+    },
+    {
+      "source": "lucky feather",
+      "target": "happy fox",
+      "value": 4
+    },
+    {
+      "source": "ancient badger",
+      "target": "witty willow",
+      "value": 1
+    },
+    {
+      "source": "lucky wind",
+      "target": "ancient maple",
+      "value": 1
+    },
+    {
+      "source": "lucky wind",
+      "target": "wild fern",
+      "value": 1
+    },
+    {
+      "source": "lucky wind",
+      "target": "curious fox",
+      "value": 1
+    },
+    {
+      "source": "lucky wind",
+      "target": "happy oak",
+      "value": 4
+    },
+    {
+      "source": "lucky wind",
+      "target": "wild fox",
+      "value": 2
+    },
+    {
+      "source": "shiny willow",
+      "target": "witty pecan",
+      "value": 4
+    },
+    {
+      "source": "shiny willow",
+      "target": "sly feather",
+      "value": 2
+    },
+    {
+      "source": "shiny willow",
+      "target": "lucky moss",
+      "value": 3
+    },
+    {
+      "source": "gentle cloud",
+      "target": "swift pecan",
+      "value": 3
+    },
+    {
+      "source": "gentle cloud",
+      "target": "witty willow",
+      "value": 3
+    },
+    {
+      "source": "gentle cloud",
+      "target": "lucky fern",
+      "value": 1
+    },
+    {
+      "source": "gentle cloud",
+      "target": "swift maple",
+      "value": 3
+    },
+    {
+      "source": "swift sun",
+      "target": "happy acorn",
+      "value": 2
+    },
+    {
+      "source": "swift sun",
+      "target": "ancient wind",
+      "value": 1
+    },
+    {
+      "source": "swift sun",
+      "target": "ancient oak",
+      "value": 2
+    },
+    {
+      "source": "swift sun",
+      "target": "shiny wind",
+      "value": 2
+    },
+    {
+      "source": "swift sun",
+      "target": "sneaky sun",
+      "value": 1
+    },
+    {
+      "source": "quiet acorn",
+      "target": "witty river",
+      "value": 1
+    },
+    {
+      "source": "quiet acorn",
+      "target": "nimble sun",
+      "value": 4
+    },
+    {
+      "source": "quiet acorn",
+      "target": "happy badger",
+      "value": 2
+    },
+    {
+      "source": "quiet acorn",
+      "target": "wild wind",
+      "value": 4
+    },
+    {
+      "source": "quiet acorn",
+      "target": "lucky wind",
+      "value": 3
+    },
+    {
+      "source": "quiet acorn",
+      "target": "ancient pecan",
+      "value": 3
+    },
+    {
+      "source": "sleepy moss",
+      "target": "nimble fox",
+      "value": 4
+    },
+    {
+      "source": "sleepy moss",
+      "target": "happy acorn",
+      "value": 1
+    },
+    {
+      "source": "sleepy moss",
+      "target": "wild stone",
+      "value": 2
+    },
+    {
+      "source": "sleepy moss",
+      "target": "fuzzy stone",
+      "value": 4
+    },
+    {
+      "source": "sleepy moss",
+      "target": "nimble fern",
+      "value": 4
+    },
+    {
+      "source": "sleepy moss",
+      "target": "wild wind",
+      "value": 1
+    },
+    {
+      "source": "gentle wind",
+      "target": "nimble maple",
+      "value": 3
+    },
+    {
+      "source": "gentle wind",
+      "target": "wild maple",
+      "value": 4
+    },
+    {
+      "source": "gentle wind",
+      "target": "lucky oak",
+      "value": 1
+    },
+    {
+      "source": "sneaky willow",
+      "target": "sly stone",
+      "value": 2
+    },
+    {
+      "source": "sneaky willow",
+      "target": "fuzzy willow",
+      "value": 1
+    },
+    {
+      "source": "sneaky willow",
+      "target": "lucky feather",
+      "value": 1
+    },
+    {
+      "source": "sneaky willow",
+      "target": "gentle badger",
+      "value": 1
+    },
+    {
+      "source": "sneaky willow",
+      "target": "sly oak",
+      "value": 1
+    },
+    {
+      "source": "sneaky willow",
+      "target": "gentle fern",
+      "value": 4
+    },
+    {
+      "source": "sneaky willow",
+      "target": "sleepy moss",
+      "value": 2
+    },
+    {
+      "source": "sneaky willow",
+      "target": "nimble pecan",
+      "value": 3
+    },
+    {
+      "source": "curious stone",
+      "target": "lucky sun",
+      "value": 3
+    },
+    {
+      "source": "curious stone",
+      "target": "sleepy badger",
+      "value": 4
+    },
+    {
+      "source": "curious stone",
+      "target": "curious willow",
+      "value": 4
+    },
+    {
+      "source": "curious stone",
+      "target": "gentle sun",
+      "value": 1
+    },
+    {
+      "source": "curious stone",
+      "target": "ancient fern",
+      "value": 1
+    },
+    {
+      "source": "curious stone",
+      "target": "gentle fern",
+      "value": 3
+    }
+  ]
+}
