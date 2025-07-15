@@ -58,55 +58,80 @@ const skyMat = new THREE.ShaderMaterial({
 });
 scene.add(new THREE.Mesh(skyGeo, skyMat));
 
-// Animation-related variables
-let foxModel = null;
-let tailBone = null;
-let leftLeg = null;
-let rightLeg = null;
-let leftArm = null;
-let rightArm = null;
-let walkTime = 0;
+// Variables
+let beanmodel;
+let mixer;
+let clock = new THREE.Clock();
+let lookLRAction, walkAction, wobbleAction;
+let mouseInScene = false;
+let lastLookTime = 0;
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+let targetPosition = new THREE.Vector3();
 
-// Load fox model
+// Load model
 const loader = new GLTFLoader();
-loader.load('assets/foxrig.glb', (gltf) => {
-  foxModel = gltf.scene;
-  foxModel.position.set(0, 0, 0);
-  scene.add(foxModel);
+loader.load('assets/lowpolybennybean.glb', (gltf) => {
+  beanmodel = gltf.scene;
+  beanmodel.position.set(0, 0, 0);
+  scene.add(beanmodel);
 
-  foxModel.traverse((obj) => {
-    if (obj.isSkinnedMesh && obj.skeleton) {
-      obj.skeleton.bones.forEach(bone => {
-        const name = bone.name.toLowerCase();
-        console.log(bone.name);
-        if (name.toLowerCase().includes('tail')) tailBone = bone;
-        else if (name.includes('shoulderl')) leftArm = bone;
-        else if (name.includes('shoulderr')) rightArm = bone;
-        else if (name.includes('thighl')) leftLeg = bone;
-        else if (name.includes('thighr')) rightLeg = bone;
-      });
+  mixer = new THREE.AnimationMixer(beanmodel);
+  gltf.animations.forEach((clip) => {
+    if (clip.name.toLowerCase().includes('looklr')) {
+        lookLRAction = mixer.clipAction(clip);
+        lookLRAction.setLoop(THREE.LoopOnce, 1);
+        lookLRAction.clampWhenFinished = true;
+    } else if (clip.name.toLowerCase() === ('wobble')) {
+        wobbleAction = mixer.clipAction(clip);
+        wobbleAction.setLoop(THREE.LoopOnce, 1);
+        wobbleAction.clampWhenFinished = true;
     }
   });
+
+  console.log('Animations loaded:', gltf.animations.map(a => a.name));
 });
 
-// Animate everything
+// Mouse move listener
+renderer.domElement.addEventListener('mousemove', (event) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  mouseInScene = true;
+});
+renderer.domElement.addEventListener('mouseleave', () => {
+  mouseInScene = false;
+});
+
+// Animate
 function animate() {
   requestAnimationFrame(animate);
+  const delta = clock.getDelta();
+  if (mixer) mixer.update(delta);
+
+  // Handle animation logic
+  if (beanmodel && mixer) {
+    if (mouseInScene) {
+        if (wobbleAction && !wobbleAction.isRunning()) {
+            wobbleAction.reset()
+                .setLoop(THREE.LoopOnce, 1)
+                .setDuration(2)
+                .clampWhenFinished = true;
+            wobbleAction.play();
+            if (lookLRAction) lookLRAction.fadeOut(0.2);
+        }
+    } else {
+        if (clock.elapsedTime - lastLookTime > 5) {
+            if (lookLRAction) {
+                lookLRAction.reset().fadeIn(0.3).play();
+                if (wobbleAction) wobbleAction.fadeOut(0.2);
+            }
+            lastLookTime = clock.elapsedTime;
+        }
+    }
+
+  }
+
   controls.update();
-
-  walkTime += 0.05;
-
-//   if (foxModel) foxModel.position.z -= 0.01;
-
-  if (tailBone) tailBone.rotation.y = Math.sin(walkTime * 2) * 0.5;
-
-  const swing = Math.sin(walkTime) * 0.5;
-
-  if (leftLeg)  leftLeg.rotation.x = -Math.PI * 0.5 + swing;
-  if (rightLeg) rightLeg.rotation.x = -Math.PI * 0.5 -swing;
-  if (leftArm)  leftArm.rotation.x = -Math.PI * 0.5 - swing * 0.5;
-  if (rightArm) rightArm.rotation.x = -Math.PI * 0.5 + swing * 0.5;
-
   renderer.render(scene, camera);
 }
 animate();
