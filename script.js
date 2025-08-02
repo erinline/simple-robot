@@ -69,12 +69,67 @@ const raycaster = new THREE.Raycaster();
 const mouse = new THREE.Vector2();
 let targetPosition = new THREE.Vector3();
 
+function convertToYukaNavMesh(geometry) {
+    const pos = geometry.attributes.position.array;
+    const index = geometry.index ? geometry.index.array : null;
+
+    const vertices = [];
+    const regions = [];
+
+    // Build vertex list
+    for (let i = 0; i < pos.length; i += 3) {
+        vertices.push({ x: pos[i], y: pos[i + 1], z: pos[i + 2] });
+    }
+
+    // Build regions (triangles)
+    if (index) {
+        for (let i = 0; i < index.length; i += 3) {
+            regions.push({ vertices: [index[i], index[i + 1], index[i + 2]] });
+        }
+    } else {
+        for (let i = 0; i < vertices.length; i += 3) {
+            regions.push({ vertices: [i, i + 1, i + 2] });
+        }
+    }
+
+    return { vertices, regions };
+}
+
+function getHeightAtPosition(mesh, x, z) {
+    const raycaster = new THREE.Raycaster();
+    const down = new THREE.Vector3(0, -1, 0);
+    raycaster.set(new THREE.Vector3(x, 100, z), down); // start high above
+    const intersects = raycaster.intersectObject(mesh, true);
+    return intersects.length > 0 ? intersects[0].point.y : 0;
+}
+
 // Load model
 const loader = new GLTFLoader();
+let navmesh;
+// Load NavMesh
+loader.load('assets/navmesh.gltf', (gltf) => {
+    navmesh = gltf.scene.children[0];  // Assuming your navmesh is the first mesh
+    const geometry = navmesh.geometry;
+    navmesh.material = new THREE.MeshStandardMaterial({ color: 0x00ff00, wireframe: true, opacity: 0.5, transparent: true }); 
+    scene.add(navmesh);
+
+    // Convert geometry to a Yuka-compatible navmesh JSON
+    const json = convertToYukaNavMesh(geometry);
+});
+
 loader.load('assets/lowpolybennybean.glb', (gltf) => {
   beanmodel = gltf.scene;
   beanmodel.position.set(0, 0, 0);
   scene.add(beanmodel);
+
+    // Wait a tick for world matrices to update
+    setTimeout(() => {
+        if (navmesh) {
+            navmesh.updateMatrixWorld(true);
+            const y = getHeightAtPosition(navmesh, 0, 0); // get height under (0,0)
+            beanmodel.position.set(0, y + 0.01, 0);
+        }
+    }, 50);
 
   mixer = new THREE.AnimationMixer(beanmodel);
   gltf.animations.forEach((clip) => {
