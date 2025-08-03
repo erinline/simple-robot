@@ -74,6 +74,7 @@ loader.load('assets/dangplane.glb', (gltf) => {
     planeMesh.material = new THREE.MeshStandardMaterial({ color: 0x00ff00, wireframe: true, opacity: 0.5, transparent: true }); 
     scene.add(planeMesh);
 });
+let wobbleAction;
 loader.load('assets/lowpolybennybean.glb', (gltf) => {
     beanmodel = gltf.scene;
     scene.add(beanmodel);
@@ -91,7 +92,10 @@ loader.load('assets/lowpolybennybean.glb', (gltf) => {
     mixer = new THREE.AnimationMixer(beanmodel);
     gltf.animations.forEach((clip) => {
         if (clip.name.toLowerCase() === ('wobble')) {
-            mixer.clipAction(clip).play();
+            wobbleAction = mixer.clipAction(clip);
+            wobbleAction.play();
+            wobbleAction.enabled = true;
+            wobbleAction.setEffectiveWeight(0);
         }
     });
 });
@@ -133,9 +137,36 @@ window.addEventListener('click', (event) => {
 function animate() {
     requestAnimationFrame(animate);
     const delta = clock.getDelta();
-    if (mixer) mixer.update(delta);
+
+    if (mixer) {
+        mixer.update(delta);
+
+        // Determine speed
+        const speed = vehicle ? vehicle.velocity.length() : 0;
+        const walkingNow = speed > 0.05;
+
+        if (wobbleAction) {
+            // Smoothly adjust weight instead of instant pause
+            const targetWeight = walkingNow ? 1 : 0;
+            const currentWeight = wobbleAction.getEffectiveWeight();
+            const newWeight = THREE.MathUtils.lerp(currentWeight, targetWeight, 0.5); // smooth step
+            wobbleAction.setEffectiveWeight(newWeight);
+        }
+    }
+
+    // Make bean face movement direction
+    if (vehicle && vehicle.velocity.squaredLength() > 0.0001) {
+        const dir = vehicle.velocity.clone().normalize();
+        const targetQuat = new THREE.Quaternion().setFromUnitVectors(
+            new THREE.Vector3(1, 0, 0), // model's forward
+            new THREE.Vector3(dir.x, 0, dir.z).normalize() // movement direction (flat)
+        );
+        beanmodel.quaternion.slerp(targetQuat, 0.15); // smooth rotate
+    }
+
     entityManager.update(delta);
     controls.update();
     renderer.render(scene, camera);
 }
+
 animate();
