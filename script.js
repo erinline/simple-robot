@@ -2,6 +2,7 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.m
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/controls/OrbitControls.js';
 import * as YUKA from 'https://cdn.jsdelivr.net/npm/yuka/build/yuka.module.js';
+import { RGBELoader } from 'https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/loaders/RGBELoader.js';
 
 let entityManager = new YUKA.EntityManager();
 let vehicle;
@@ -16,7 +17,23 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 renderer.shadowMap.enabled = true;
 
+// HDR for environment lighting
+const pmremGenerator = new THREE.PMREMGenerator(renderer);
+pmremGenerator.compileEquirectangularShader();
+
+new RGBELoader()
+  .setDataType(THREE.UnsignedByteType)
+  .load('assets/skyline.hdr', (hdrEquirect) => {
+    const envMap = pmremGenerator.fromEquirectangular(hdrEquirect).texture;
+    scene.environment = envMap;
+    scene.background = envMap;
+    hdrEquirect.dispose();
+    pmremGenerator.dispose();
+  });
+
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.minPolarAngle = 0;              // 0 = looking straight up from pole
+controls.maxPolarAngle = Math.PI / 2.05; // clamp just above horizontal (90°)
 controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.target.set(0, 0, 0);
@@ -75,7 +92,7 @@ loader.load('assets/dangplane.glb', (gltf) => {
     scene.add(planeMesh);
 });
 let wobbleAction;
-loader.load('assets/lowpolybennybean.glb', (gltf) => {
+loader.load('assets/wheelbunny.glb', (gltf) => {
     beanmodel = gltf.scene;
     scene.add(beanmodel);
     createYukaVehicle(beanmodel);
@@ -91,7 +108,7 @@ loader.load('assets/lowpolybennybean.glb', (gltf) => {
 
     mixer = new THREE.AnimationMixer(beanmodel);
     gltf.animations.forEach((clip) => {
-        if (clip.name.toLowerCase() === ('wobble')) {
+        if (clip.name.toLowerCase() === ('fullwheels')) {
             wobbleAction = mixer.clipAction(clip);
             wobbleAction.play();
             wobbleAction.enabled = true;
