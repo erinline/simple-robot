@@ -28,14 +28,14 @@ renderer.shadowMap.enabled = true;
 const pmremGenerator = new THREE.PMREMGenerator(renderer);
 pmremGenerator.compileEquirectangularShader();
 new RGBELoader()
-  .setDataType(THREE.UnsignedByteType)
-  .load('assets/skyline.hdr', (hdrEquirect) => {
-    const envMap = pmremGenerator.fromEquirectangular(hdrEquirect).texture;
-    scene.environment = envMap;
-    scene.background = envMap;
-    hdrEquirect.dispose();
-    pmremGenerator.dispose();
-  });
+    .setDataType(THREE.UnsignedByteType)
+    .load('assets/skyline.hdr', (hdrEquirect) => {
+        const envMap = pmremGenerator.fromEquirectangular(hdrEquirect).texture;
+        scene.environment = envMap;
+        scene.background = envMap;
+        hdrEquirect.dispose();
+        pmremGenerator.dispose();
+    });
 
 // Lights
 scene.add(new THREE.AmbientLight(0xffffff, 1));
@@ -58,79 +58,79 @@ const look = new PointerLockControls(camera, document.body); // used only for ya
 
 let mode = 'ORBIT'; // 'ORBIT' | 'PILOT'
 function setMode(next) {
-  if (next === mode) return;
-  mode = next;
+    if (next === mode) return;
+    mode = next;
 
-  if (mode === 'PILOT') {
-    orbit.enabled = false;
-    // Lock pointer (user gesture needed in most browsers; fallback handled on click)
-    look.lock();
-  } else {
-    // Back to orbit
-    look.unlock();
-    orbit.enabled = true;
-    // Snap orbit target to bunny if available
-    if (beanmodel) {
-      orbit.target.copy(beanmodel.position);
-      orbit.update();
+    if (mode === 'PILOT') {
+        orbit.enabled = false;
+        // Lock pointer (user gesture needed in most browsers; fallback handled on click)
+        look.lock();
+    } else {
+        // Back to orbit
+        look.unlock();
+        orbit.enabled = true;
+        // Snap orbit target to bunny if available
+        if (beanmodel) {
+            orbit.target.copy(beanmodel.position);
+            orbit.update();
+        }
     }
-  }
 }
 
 // Lock only does anything meaningful when in PILOT mode
 document.body.addEventListener('click', () => {
-  if (mode === 'PILOT' && !look.isLocked) look.lock();
+    if (mode === 'PILOT' && !look.isLocked) look.lock();
 });
 
 // Tab toggles modes
 window.addEventListener('keydown', (e) => {
-  if (e.key === 'Tab') {
-    e.preventDefault();
-    setMode(mode === 'ORBIT' ? 'PILOT' : 'ORBIT');
-  }
+    if (e.key === 'Tab') {
+        e.preventDefault();
+        setMode(mode === 'ORBIT' ? 'PILOT' : 'ORBIT');
+    }
 });
 
 // Movement keys (active only in PILOT mode)
 const keys = { w: false, a: false, s: false, d: false };
 window.addEventListener('keydown', (e) => {
-  const k = e.key.toLowerCase();
-  if (k in keys) keys[k] = true;
+    const k = e.key.toLowerCase();
+    if (k in keys) keys[k] = true;
 });
 window.addEventListener('keyup', (e) => {
-  const k = e.key.toLowerCase();
-  if (k in keys) keys[k] = false;
+    const k = e.key.toLowerCase();
+    if (k in keys) keys[k] = false;
 });
 
 const moveSpeed = 4; // m/s
 
 // Clamp position to navmesh plane
 function clampToNavMesh(pos) {
-  if (!planeMesh) return pos;
-  const raycaster = new THREE.Raycaster(
-    new THREE.Vector3(pos.x, pos.y + 20, pos.z),
-    new THREE.Vector3(0, -1, 0)
-  );
-  const hit = raycaster.intersectObject(planeMesh, true);
-  return hit.length ? hit[0].point : pos;
+    if (!planeMesh) return pos;
+    const raycaster = new THREE.Raycaster(
+        new THREE.Vector3(pos.x, pos.y + 20, pos.z),
+        new THREE.Vector3(0, -1, 0)
+    );
+    const hit = raycaster.intersectObject(planeMesh, true);
+    return hit.length ? hit[0].point : pos;
 }
 
 // Load plane (visualized wireframe) as the walkable
 const gltf = new GLTFLoader();
 gltf.load('assets/dangplane.glb', (res) => {
-  planeMesh = res.scene;
-  planeMesh.traverse(obj => {
-    if (obj.isMesh) {
-      obj.material = new THREE.MeshStandardMaterial({
-        color: 0x00ff00,
-        wireframe: true,
-        opacity: 0.5,
-        transparent: true
-      });
-      obj.castShadow = false;
-      obj.receiveShadow = true;
-    }
-  });
-  scene.add(planeMesh);
+    planeMesh = res.scene;
+    planeMesh.traverse(obj => {
+        if (obj.isMesh) {
+            obj.material = new THREE.MeshStandardMaterial({
+                color: 0x00ff00,
+                wireframe: true,
+                opacity: 0.5,
+                transparent: true
+            });
+            obj.castShadow = false;
+            obj.receiveShadow = true;
+        }
+    });
+    scene.add(planeMesh);
 });
 
 function getHeightAtPosition(mesh, x, z) {
@@ -154,23 +154,23 @@ function createYukaVehicle(bean) {
 const navLoader = new YUKA.NavMeshLoader();
 let navmesh;
 navLoader.load('assets/navmesh.gltf')
-        .then( ( navMesh ) => {
-            // Your loaded NavMesh is available here
-            navmesh = navMesh;
-            console.log('NavMesh loaded for pathfinding');
-            console.log( 'NavMesh loaded successfully:', navMesh );
-            // You can now use this navMesh for pathfinding, etc.
-        } )
-        .catch( ( error ) => {
-            console.error( 'Error loading NavMesh:', error );
-        } );
+    .then((navMesh) => {
+        // Your loaded NavMesh is available here
+        navmesh = navMesh;
+        console.log('NavMesh loaded for pathfinding');
+        console.log('NavMesh loaded successfully:', navMesh);
+        // You can now use this navMesh for pathfinding, etc.
+    })
+    .catch((error) => {
+        console.error('Error loading NavMesh:', error);
+    });
 
 
 // Load bunny
 gltf.load('assets/wheelbunny.glb', (res) => {
     beanmodel = res.scene;
     beanmodel.position.set(0, 0.1, 0);
-    beanmodel.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; }});
+    beanmodel.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
     scene.add(beanmodel);
 
     // Snap to navmesh once it's loaded
@@ -181,12 +181,12 @@ gltf.load('assets/wheelbunny.glb', (res) => {
         }
     }, 100);
 
-  // Start orbit target on the bunny
-  orbit.target.copy(beanmodel.position);
-  orbit.update();
+    // Start orbit target on the bunny
+    orbit.target.copy(beanmodel.position);
+    orbit.update();
 
     mixer = new THREE.AnimationMixer(beanmodel);
-        res.animations.forEach((clip) => {
+    res.animations.forEach((clip) => {
         if (clip.name.toLowerCase() === 'fullwheels') {
             wobbleAction = mixer.clipAction(clip);
             wobbleAction.play();
@@ -197,7 +197,7 @@ gltf.load('assets/wheelbunny.glb', (res) => {
 });
 
 // Helpers reused each frame
-const UP = new THREE.Vector3(0,1,0);
+const UP = new THREE.Vector3(0, 1, 0);
 const tmpForward = new THREE.Vector3();
 const tmpRight = new THREE.Vector3();
 const moveDir = new THREE.Vector3();
@@ -207,83 +207,83 @@ const cameraHeight = 4;
 const cameraDistance = 15;
 
 function animate() {
-  requestAnimationFrame(animate);
-  const dt = clock.getDelta();
+    requestAnimationFrame(animate);
+    const dt = clock.getDelta();
 
-  let moving = false;
+    let moving = false;
 
-  if (beanmodel) {
-    if (mode === 'PILOT') {
-      // Compute camera-space movement basis (yaw only)
-      camera.getWorldDirection(tmpForward);
-      tmpForward.y = 0;
-      tmpForward.normalize();
-      // RIGHT = forward × up  (not up × forward, which flips handedness)
-      tmpRight.copy(tmpForward).cross(UP).normalize();
+    if (beanmodel) {
+        if (mode === 'PILOT') {
+            // Compute camera-space movement basis (yaw only)
+            camera.getWorldDirection(tmpForward);
+            tmpForward.y = 0;
+            tmpForward.normalize();
+            // RIGHT = forward × up  (not up × forward, which flips handedness)
+            tmpRight.copy(tmpForward).cross(UP).normalize();
 
-      moveDir.set(0,0,0);
-      if (keys.w) moveDir.add(tmpForward);
-      if (keys.s) moveDir.sub(tmpForward);
-      if (keys.a) moveDir.sub(tmpRight);
-      if (keys.d) moveDir.add(tmpRight);
+            moveDir.set(0, 0, 0);
+            if (keys.w) moveDir.add(tmpForward);
+            if (keys.s) moveDir.sub(tmpForward);
+            if (keys.a) moveDir.sub(tmpRight);
+            if (keys.d) moveDir.add(tmpRight);
 
-      if (moveDir.lengthSq() > 0) {
-        moving = true;
-        moveDir.normalize().multiplyScalar(moveSpeed * dt);
+            if (moveDir.lengthSq() > 0) {
+                moving = true;
+                moveDir.normalize().multiplyScalar(moveSpeed * dt);
 
-        // Rotate bunny to face movement direction (flat)
-        const faceDir = new THREE.Vector3(moveDir.x, 0, moveDir.z).normalize();
-        if (faceDir.lengthSq() > 0) {
-          const targetQuat = new THREE.Quaternion().setFromUnitVectors(MODEL_FORWARD, faceDir);
-          beanmodel.quaternion.slerp(targetQuat, 0.18);
+                // Rotate bunny to face movement direction (flat)
+                const faceDir = new THREE.Vector3(moveDir.x, 0, moveDir.z).normalize();
+                if (faceDir.lengthSq() > 0) {
+                    const targetQuat = new THREE.Quaternion().setFromUnitVectors(MODEL_FORWARD, faceDir);
+                    beanmodel.quaternion.slerp(targetQuat, 0.18);
+                }
+
+                const targetPos = beanmodel.position.clone().add(moveDir);
+                const clamped = clampToNavMesh(targetPos);
+                beanmodel.position.copy(clamped);
+            }
+
+            // Place camera behind & above bunny along current camera forward so bunny stays centered
+            const camPos = beanmodel.position.clone()
+                .addScaledVector(tmpForward, -cameraDistance)
+                .addScaledVector(UP, cameraHeight);
+
+            // The PointerLockControls owns the camera transform; we set its object position to our follow pos.
+            look.getObject().position.copy(camPos);
+            // We do NOT call look.getObject().lookAt — pointer yaw/pitch is from the mouse.
+        } else {
+            // ORBIT mode keeps orbit target on bunny, so orbit feels anchored
+            if (beanmodel) {
+                orbit.target.lerp(beanmodel.position, 0.2);
+                orbit.update();
+            }
         }
-
-        const targetPos = beanmodel.position.clone().add(moveDir);
-        const clamped = clampToNavMesh(targetPos);
-        beanmodel.position.copy(clamped);
-      }
-
-      // Place camera behind & above bunny along current camera forward so bunny stays centered
-      const camPos = beanmodel.position.clone()
-        .addScaledVector(tmpForward, -cameraDistance)
-        .addScaledVector(UP, cameraHeight);
-
-      // The PointerLockControls owns the camera transform; we set its object position to our follow pos.
-      look.getObject().position.copy(camPos);
-      // We do NOT call look.getObject().lookAt — pointer yaw/pitch is from the mouse.
-    } else {
-      // ORBIT mode keeps orbit target on bunny, so orbit feels anchored
-      if (beanmodel) {
-        orbit.target.lerp(beanmodel.position, 0.2);
-        orbit.update();
-      }
     }
-  }
 
-  // Blend “wheels” animation by speed
-  if (wobbleAction) {
-    const targetWeight = moving ? 1 : 0;
-    const current = wobbleAction.getEffectiveWeight();
-    wobbleAction.setEffectiveWeight(THREE.MathUtils.lerp(current, targetWeight, 0.5));
-  }
-  if (mixer) mixer.update(dt);
+    // Blend “wheels” animation by speed
+    if (wobbleAction) {
+        const targetWeight = moving ? 1 : 0;
+        const current = wobbleAction.getEffectiveWeight();
+        wobbleAction.setEffectiveWeight(THREE.MathUtils.lerp(current, targetWeight, 0.5));
+    }
+    if (mixer) mixer.update(dt);
 
-  // Resize
-  if (renderer.domElement.width !== window.innerWidth || renderer.domElement.height !== window.innerHeight) {
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-  }
+    // Resize
+    if (renderer.domElement.width !== window.innerWidth || renderer.domElement.height !== window.innerHeight) {
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+    }
 
-  // Update active control
-  if (mode === 'ORBIT') orbit.update();
+    // Update active control
+    if (mode === 'ORBIT') orbit.update();
 
-  renderer.render(scene, camera);
+    renderer.render(scene, camera);
 }
 
 animate();
 
 // Optional: Esc to exit PILOT back to Orbit smoothly
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && mode === 'PILOT') setMode('ORBIT');
+    if (e.key === 'Escape' && mode === 'PILOT') setMode('ORBIT');
 });
