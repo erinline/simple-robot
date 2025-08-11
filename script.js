@@ -9,8 +9,36 @@ let entityManager = new YUKA.EntityManager();
 let vehicle;
 let yukaNavMesh;
 
+let freebunny, freeMixer, freeWheels, myWheels; // actions
+let bounds, boundsMargin = 0.2;
+
+const hasState = {
+    synced: false,
+    proximityTimer: 0,               // seconds inside 1m
+    proximityThreshold: 3.0,         // seconds to fill
+};
+
+const freeState = {
+    dir: new THREE.Vector3(1, 0, 0).normalize(),
+    speed: 2.2,
+    driftAmp: 0.9,   // how loopy (radians/sec)
+    driftHz: 0.25,   // drift frequency
+};
+
+const myOrbitState = {
+    dir: new THREE.Vector3(1, 0, 0).normalize(), // straight line until edge
+    speed: 2.0
+};
+
+const myLoopyState = { // used after syncing, when ORBIT behaves like freebunny
+    dir: new THREE.Vector3(0, 0, 1).normalize(),
+    speed: 2.2,
+    driftAmp: 0.8,
+    driftHz: 0.25,
+};
+
 let planeMesh;
-let beanmodel, mixer, wobbleAction;
+let mybunny, mixer, wobbleAction;
 const clock = new THREE.Clock();
 
 const MODEL_FORWARD = new THREE.Vector3(0, 0, -1); // change if your GLB faces +Z
@@ -23,6 +51,43 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 renderer.shadowMap.enabled = true;
+
+const hud = document.createElement('div');
+hud.style.position = 'fixed';
+hud.style.top = '10px';
+hud.style.left = '12px';
+hud.style.zIndex = '10';
+hud.style.display = 'flex';
+hud.style.alignItems = 'center';
+hud.style.gap = '8px';
+document.body.appendChild(hud);
+
+// diamond icon
+const diamond = document.createElement('div');
+diamond.style.width = '16px';
+diamond.style.height = '16px';
+diamond.style.transform = 'rotate(45deg)';
+diamond.style.background = hasState.synced ? '#4caf50' : '#ffffff';
+diamond.style.opacity = '0.9';
+diamond.style.boxShadow = '0 0 8px rgba(255,255,255,0.5)';
+hud.appendChild(diamond);
+
+// progress bar
+const barWrap = document.createElement('div');
+barWrap.style.width = '160px';
+barWrap.style.height = '10px';
+barWrap.style.border = '1px solid rgba(255,255,255,0.7)';
+barWrap.style.background = 'rgba(255,255,255,0.08)';
+barWrap.style.borderRadius = '6px';
+barWrap.style.overflow = 'hidden';
+hud.appendChild(barWrap);
+
+const barFill = document.createElement('div');
+barFill.style.height = '100%';
+barFill.style.width = '0%';
+barFill.style.background = '#00d1ff';
+barFill.style.transition = 'width 0.1s linear';
+barWrap.appendChild(barFill);
 
 // HDR for environment lighting
 const pmremGenerator = new THREE.PMREMGenerator(renderer);
@@ -70,8 +135,8 @@ function setMode(next) {
         look.unlock();
         orbit.enabled = true;
         // Snap orbit target to bunny if available
-        if (beanmodel) {
-            orbit.target.copy(beanmodel.position);
+        if (mybunny) {
+            orbit.target.copy(mybunny.position);
             orbit.update();
         }
     }
@@ -114,6 +179,64 @@ function clampToNavMesh(pos) {
     return hit.length ? hit[0].point : pos;
 }
 
+function clampXZToBounds(pos) {
+    if (!bounds) return pos;
+    pos.x = THREE.MathUtils.clamp(pos.x, bounds.min.x + boundsMargin, bounds.max.x - boundsMargin);
+    pos.z = THREE.MathUtils.clamp(pos.z, bounds.min.z + boundsMargin, bounds.max.z - boundsMargin);
+    return pos;
+}
+function hitEdge(next) {
+    if (!bounds) return null;
+    const sideXMin = next.x <= bounds.min.x + boundsMargin;
+    const sideXMax = next.x >= bounds.max.x - boundsMargin;
+    const sideZMin = next.z <= bounds.min.z + boundsMargin;
+    const sideZMax = next.z >= bounds.max.z - boundsMargin;
+    if (sideXMin) return 'xmin';
+    if (sideXMax) return 'xmax';
+    if (sideZMin) return 'zmin';
+    if (sideZMax) return 'zmax';
+    return null;
+}
+function rotateRight90(vec) {
+    // rotate in XZ by -90°: (x,z) -> (z, -x)
+    const x = vec.x, z = vec.z;
+    vec.x = z; vec.z = -x;
+    vec.normalize();
+    return vec;
+}
+function reflectXZ(dir, side) {
+    // perfect reflection on an axis-aligned wall
+    if (side === 'xmin' || side === 'xmax') dir.x *= -1;
+    if (side === 'zmin' || side === 'zmax') dir.z *= -1;
+    dir.normalize();
+    return dir;
+}
+function jitterAngle(dir, radians) {
+    const ang = Math.atan2(dir.z, dir.x) + (Math.random() * 2 - 1) * radians;
+    dir.set(Math.cos(ang), 0, Math.sin(ang)).normalize();
+    return dir;
+}
+function moveOnPlane(object3D, dir, speed, dt) {
+    const next = object3D.position.clone().addScaledVector(dir, speed * dt);
+    const side = hitEdge(next);
+    if (side) {
+        // clamp to boundary and signal edge hit
+        clampXZToBounds(next);
+        object3D.position.copy(next);
+        return side;
+    } else {
+        object3D.position.copy(next);
+        return null;
+    }
+}
+function faceMoveDirection(object3D, dir) {
+    const faceDir = new THREE.Vector3(dir.x, 0, dir.z).normalize();
+    if (faceDir.lengthSq() > 0) {
+        const targetQuat = new THREE.Quaternion().setFromUnitVectors(MODEL_FORWARD, faceDir);
+        object3D.quaternion.slerp(targetQuat, 0.18);
+    }
+}
+
 // Load plane (visualized wireframe) as the walkable
 const gltf = new GLTFLoader();
 gltf.load('assets/dangplane.glb', (res) => {
@@ -131,6 +254,9 @@ gltf.load('assets/dangplane.glb', (res) => {
         }
     });
     scene.add(planeMesh);
+
+    planeMesh.updateMatrixWorld(true);
+    bounds = new THREE.Box3().setFromObject(planeMesh);
 });
 
 function getHeightAtPosition(mesh, x, z) {
@@ -165,35 +291,72 @@ navLoader.load('assets/navmesh.gltf')
         console.error('Error loading NavMesh:', error);
     });
 
+function loadFreeBunny(animationsRef) {
+    gltf.load('assets/wheelbunny.glb', (res) => {
+        freebunny = res.scene;
+        freebunny.name = 'freebunny';
+        freebunny.position.set(12.5, 0.1, -2.5);
+
+        // make it blue: clone materials so we don't affect mybunny
+        freebunny.traverse(o => {
+            if (o.isMesh) {
+                o.material = o.material.clone();
+                if (o.material.color) o.material.color.set('#3aa0ff');
+                o.castShadow = true; o.receiveShadow = true;
+            }
+        });
+
+        scene.add(freebunny);
+
+        // snap to plane
+        if (planeMesh) {
+            const y = getHeightAtPosition(planeMesh, freebunny.position.x, freebunny.position.z);
+            freebunny.position.y = y + 0.01;
+        }
+
+        freeMixer = new THREE.AnimationMixer(freebunny);
+        // prefer the same 'fullwheels' if present
+        const clip = (res.animations.find(c => c.name.toLowerCase() === 'fullwheels')
+            || animationsRef?.find(c => c.name.toLowerCase() === 'fullwheels'));
+        if (clip) {
+            freeWheels = freeMixer.clipAction(clip);
+            freeWheels.play();
+            freeWheels.enabled = true;
+            freeWheels.setEffectiveWeight(1); // always rolling
+        }
+    });
+}
+
 
 // Load bunny
 gltf.load('assets/wheelbunny.glb', (res) => {
-    beanmodel = res.scene;
-    beanmodel.position.set(0, 0.1, 0);
-    beanmodel.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
-    scene.add(beanmodel);
+    mybunny = res.scene;
+    mybunny.position.set(0, 0.1, 0);
+    mybunny.traverse(o => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+    scene.add(mybunny);
 
-    // Snap to navmesh once it's loaded
     setTimeout(() => {
         if (planeMesh) {
             const y = getHeightAtPosition(planeMesh, 0, 0);
-            beanmodel.position.set(0, y + 0.01, 0);
+            mybunny.position.set(0, y + 0.01, 0);
         }
     }, 100);
 
-    // Start orbit target on the bunny
-    orbit.target.copy(beanmodel.position);
+    orbit.target.copy(mybunny.position);
     orbit.update();
 
-    mixer = new THREE.AnimationMixer(beanmodel);
+    mixer = new THREE.AnimationMixer(mybunny);
     res.animations.forEach((clip) => {
         if (clip.name.toLowerCase() === 'fullwheels') {
-            wobbleAction = mixer.clipAction(clip);
-            wobbleAction.play();
-            wobbleAction.enabled = true;
-            wobbleAction.setEffectiveWeight(0);
+            myWheels = mixer.clipAction(clip);
+            myWheels.play();
+            myWheels.enabled = true;
+            myWheels.setEffectiveWeight(0); // blended by movement
         }
     });
+
+    // AFTER mybunny is ready, load freebunny
+    loadFreeBunny(res.animations);
 });
 
 // Helpers reused each frame
@@ -212,7 +375,7 @@ function animate() {
 
     let moving = false;
 
-    if (beanmodel) {
+    if (mybunny) {
         if (mode === 'PILOT') {
             // Compute camera-space movement basis (yaw only)
             camera.getWorldDirection(tmpForward);
@@ -235,16 +398,16 @@ function animate() {
                 const faceDir = new THREE.Vector3(moveDir.x, 0, moveDir.z).normalize();
                 if (faceDir.lengthSq() > 0) {
                     const targetQuat = new THREE.Quaternion().setFromUnitVectors(MODEL_FORWARD, faceDir);
-                    beanmodel.quaternion.slerp(targetQuat, 0.18);
+                    mybunny.quaternion.slerp(targetQuat, 0.18);
                 }
 
-                const targetPos = beanmodel.position.clone().add(moveDir);
+                const targetPos = mybunny.position.clone().add(moveDir);
                 const clamped = clampToNavMesh(targetPos);
-                beanmodel.position.copy(clamped);
+                mybunny.position.copy(clamped);
             }
 
             // Place camera behind & above bunny along current camera forward so bunny stays centered
-            const camPos = beanmodel.position.clone()
+            const camPos = mybunny.position.clone()
                 .addScaledVector(tmpForward, -cameraDistance)
                 .addScaledVector(UP, cameraHeight);
 
@@ -253,8 +416,8 @@ function animate() {
             // We do NOT call look.getObject().lookAt — pointer yaw/pitch is from the mouse.
         } else {
             // ORBIT mode keeps orbit target on bunny, so orbit feels anchored
-            if (beanmodel) {
-                orbit.target.lerp(beanmodel.position, 0.2);
+            if (mybunny) {
+                orbit.target.lerp(mybunny.position, 0.2);
                 orbit.update();
             }
         }
@@ -277,6 +440,84 @@ function animate() {
 
     // Update active control
     if (mode === 'ORBIT') orbit.update();
+
+    // === AUTONOMY: freebunny loopy bounce ===
+    if (freebunny) {
+        // drift heading to make it "loopy"
+        const t = clock.elapsedTime;
+        const drift = Math.sin(2 * Math.PI * freeState.driftHz * t) * freeState.driftAmp * dt;
+        const ang = Math.atan2(freeState.dir.z, freeState.dir.x) + drift;
+        freeState.dir.set(Math.cos(ang), 0, Math.sin(ang)).normalize();
+
+        const edgeHit = moveOnPlane(freebunny, freeState.dir, freeState.speed, dt);
+        if (edgeHit) {
+            reflectXZ(freeState.dir, edgeHit);
+            jitterAngle(freeState.dir, THREE.MathUtils.degToRad(30));
+        }
+        // keep on plane height
+        if (planeMesh) {
+            const y = getHeightAtPosition(planeMesh, freebunny.position.x, freebunny.position.z);
+            freebunny.position.y = y + 0.01;
+        }
+        faceMoveDirection(freebunny, freeState.dir);
+        if (freeMixer) freeMixer.update(dt);
+    }
+
+    // === mybunny: ORBIT autopilot ===
+    if (mybunny && mode === 'ORBIT') {
+        if (hasState.synced) {
+            // behave like freebunny
+            const t = clock.elapsedTime;
+            const drift = Math.sin(2 * Math.PI * myLoopyState.driftHz * t) * myLoopyState.driftAmp * dt;
+            const ang = Math.atan2(myLoopyState.dir.z, myLoopyState.dir.x) + drift;
+            myLoopyState.dir.set(Math.cos(ang), 0, Math.sin(ang)).normalize();
+
+            const edgeHit = moveOnPlane(mybunny, myLoopyState.dir, myLoopyState.speed, dt);
+            if (edgeHit) {
+                reflectXZ(myLoopyState.dir, edgeHit);
+                jitterAngle(myLoopyState.dir, THREE.MathUtils.degToRad(25));
+            }
+        } else {
+            // linear path; on edge, turn right and then follow edge
+            const edgeHit = moveOnPlane(mybunny, myOrbitState.dir, myOrbitState.speed, dt);
+            if (edgeHit) {
+                // rotate right 90° and keep going
+                rotateRight90(myOrbitState.dir);
+                // make sure we're aligned along the edge (flatten stray component)
+                if (edgeHit === 'xmin' || edgeHit === 'xmax') {
+                    // sliding along Z
+                    myOrbitState.dir.x = 0; myOrbitState.dir.z = Math.sign(myOrbitState.dir.z) || 1;
+                } else {
+                    // sliding along X
+                    myOrbitState.dir.z = 0; myOrbitState.dir.x = Math.sign(myOrbitState.dir.x) || 1;
+                }
+                myOrbitState.dir.normalize();
+            }
+        }
+        // keep on plane height
+        if (planeMesh) {
+            const y = getHeightAtPosition(planeMesh, mybunny.position.x, mybunny.position.z);
+            mybunny.position.y = y + 0.01;
+        }
+        faceMoveDirection(mybunny, mode === 'ORBIT' ? (hasState.synced ? myLoopyState.dir : myOrbitState.dir) : moveDir);
+    }
+
+    // === PROXIMITY + HUD ===
+    if (mybunny && freebunny) {
+        const d = mybunny.position.distanceTo(freebunny.position);
+        if (d <= 5.0) {
+            hasState.proximityTimer = Math.min(hasState.proximityThreshold, hasState.proximityTimer + dt);
+        } else {
+            hasState.proximityTimer = Math.max(0, hasState.proximityTimer - 1.5 * dt); // mild decay feels good
+        }
+        const pct = (hasState.proximityTimer / hasState.proximityThreshold) * 100;
+        barFill.style.width = `${pct}%`;
+
+        if (!hasState.synced && hasState.proximityTimer >= hasState.proximityThreshold) {
+            hasState.synced = true;
+            diamond.style.background = '#4caf50'; // turn green once synced
+        }
+    }
 
     renderer.render(scene, camera);
 }
