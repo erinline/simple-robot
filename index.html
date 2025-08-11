@@ -1,35 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <title>Little World Demo</title>
-  <style> 
-    body { margin: 0; overflow: hidden; } 
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
 
     #graph-link {
-        position: fixed;
-        top: 12px;
-        right: 12px;
-        font-size: 28px;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 8px 10px;
-        border-radius: 8px;
-        color: black;
-        text-decoration: none;
-        z-index: 1000;
-        transition: background 0.2s ease;
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      font-size: 28px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 8px 10px;
+      border-radius: 8px;
+      color: black;
+      text-decoration: none;
+      z-index: 1000;
+      transition: background 0.2s ease;
     }
 
     #graph-link:hover {
-        background: rgba(200, 200, 255, 0.95);
+      background: rgba(200, 200, 255, 0.95);
     }
   </style>
 </head>
+
 <body>
-    <a id="graph-link" href="graph.html" title="View Network Graph">
-        <span class="material-symbols-outlined">hive</span>
-    </a>
+  <a id="graph-link" href="graph.html" title="View Network Graph">
+    <span class="material-symbols-outlined">hive</span>
+  </a>
   <script type="module" src="script.js"></script>
+  <script>
+    (function () {
+      if (sessionStorage.getItem('tookControl')) return; // only once per tab/session
+
+      const hint = document.createElement('div');
+      hint.id = 'control-hint';
+      hint.textContent = 'press tab to take control, then WASD moves me forward-left-back-right!';
+      Object.assign(hint.style, {
+        position: 'fixed',
+        left: '50%',
+        bottom: '20px',
+        transform: 'translateX(-50%)',
+        maxWidth: '90vw',
+        padding: '10px 14px',
+        fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif',
+        fontSize: '14px',
+        color: '#fff',
+        background: 'rgba(0,0,0,0.72)',
+        borderRadius: '999px',
+        boxShadow: '0 6px 20px rgba(0,0,0,0.35)',
+        backdropFilter: 'blur(4px)',
+        zIndex: '9999',
+        opacity: '0',
+        transition: 'opacity 220ms ease',
+        pointerEvents: 'none',
+        textAlign: 'center',
+        lineHeight: '1.2'
+      });
+      document.body.appendChild(hint);
+      // fade in next frame
+      requestAnimationFrame(() => (hint.style.opacity = '1'));
+
+      const hide = () => {
+        if (!hint.parentNode) return;
+        hint.style.opacity = '0';
+        setTimeout(() => hint.remove(), 220);
+        // mark as shown this session
+        sessionStorage.setItem('tookControl', '1');
+        window.removeEventListener('keydown', onKey);
+        clearTimeout(timer);
+      };
+
+      const onKey = (e) => {
+        if (e.key === 'Tab') hide();
+      };
+      window.addEventListener('keydown', onKey);
+
+      // auto-hide after 7s if they don’t press Tab
+      const timer = setTimeout(hide, 7000);
+    })();
+  </script>
 </body>
+
 </html>
