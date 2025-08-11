@@ -156,17 +156,17 @@ window.addEventListener('keydown', (e) => {
 });
 
 // Movement keys (active only in PILOT mode)
-const keys = { w: false, a: false, s: false, d: false };
+const keys = { w: false, a: false, s: false, d: false, capslock: false };
 window.addEventListener('keydown', (e) => {
-    const k = e.key.toLowerCase();
-    if (k in keys) keys[k] = true;
+    const key = e.key.toLowerCase();
+    if (key in keys) keys[key] = true;
+    if (e.getModifierState && e.getModifierState('CapsLock')) keys.capslock = true;
 });
 window.addEventListener('keyup', (e) => {
-    const k = e.key.toLowerCase();
-    if (k in keys) keys[k] = false;
+    const key = e.key.toLowerCase();
+    if (key in keys) keys[key] = false;
+    if (e.getModifierState && !e.getModifierState('CapsLock')) keys.capslock = false;
 });
-
-const moveSpeed = 4; // m/s
 
 // Clamp position to navmesh plane
 function clampToNavMesh(pos) {
@@ -405,6 +405,7 @@ const cameraDistance = 15;
 function animate() {
     requestAnimationFrame(animate);
     const dt = clock.getDelta();
+    const moveSpeed = keys.capslock ? 8 : 4; // check dynamically here
 
     let moving = false;
 
