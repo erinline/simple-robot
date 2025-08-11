@@ -237,6 +237,39 @@ function faceMoveDirection(object3D, dir) {
     }
 }
 
+function hitEdgeFlags(next) {
+    if (!bounds) return null;
+    const f = {
+        xmin: next.x <= bounds.min.x + boundsMargin,
+        xmax: next.x >= bounds.max.x - boundsMargin,
+        zmin: next.z <= bounds.min.z + boundsMargin,
+        zmax: next.z >= bounds.max.z - boundsMargin,
+    };
+    return (f.xmin || f.xmax || f.zmin || f.zmax) ? f : null;
+}
+
+function pushInsideFromEdge(pos, flags, eps = 0.03) {
+    if (flags.xmin) pos.x = bounds.min.x + boundsMargin + eps;
+    if (flags.xmax) pos.x = bounds.max.x - boundsMargin - eps;
+    if (flags.zmin) pos.z = bounds.min.z + boundsMargin + eps;
+    if (flags.zmax) pos.z = bounds.max.z - boundsMargin - eps;
+}
+
+function setLeftTurnTangent(dir, flags) {
+    // Compute a “turn left candidate from current dir, then project to edge tangent.
+    const turned = dir.clone();
+    // left turn in XZ: (x,z) -> (z, -x)
+    turned.set(dir.z, 0, -dir.x).normalize();
+
+    if (flags.xmin || flags.xmax) {
+        // tangent must be along ±Z
+        dir.set(0, 0, Math.sign(turned.z) || 1).normalize();
+    } else if (flags.zmin || flags.zmax) {
+        // tangent must be along ±X
+        dir.set(Math.sign(turned.x) || 1, 0, 0).normalize();
+    }
+}
+
 // Load plane (visualized wireframe) as the walkable
 const gltf = new GLTFLoader();
 gltf.load('assets/dangplane.glb', (res) => {
@@ -478,20 +511,21 @@ function animate() {
                 jitterAngle(myLoopyState.dir, THREE.MathUtils.degToRad(25));
             }
         } else {
-            // linear path; on edge, turn right and then follow edge
-            const edgeHit = moveOnPlane(mybunny, myOrbitState.dir, myOrbitState.speed, dt);
-            if (edgeHit) {
-                // rotate right 90° and keep going
-                rotateRight90(myOrbitState.dir);
-                // make sure we're aligned along the edge (flatten stray component)
-                if (edgeHit === 'xmin' || edgeHit === 'xmax') {
-                    // sliding along Z
-                    myOrbitState.dir.x = 0; myOrbitState.dir.z = Math.sign(myOrbitState.dir.z) || 1;
-                } else {
-                    // sliding along X
-                    myOrbitState.dir.z = 0; myOrbitState.dir.x = Math.sign(myOrbitState.dir.x) || 1;
-                }
-                myOrbitState.dir.normalize();
+            // linear path; on edge, turn left and then follow edge
+            const next = mybunny.position.clone().addScaledVector(myOrbitState.dir, myOrbitState.speed * dt);
+            const flags = hitEdgeFlags(next);
+            if (flags) {
+                // clamp & nudge slightly inside to avoid sticking at the exact boundary/corner
+                pushInsideFromEdge(next, flags, 0.04);
+                mybunny.position.copy(next);
+
+                // choose a single tangent consistent with a left turn
+                setLeftTurnTangent(myOrbitState.dir, flags);
+
+                // give it a tiny step along tangent so we leave the corner this frame
+                mybunny.position.addScaledVector(myOrbitState.dir, 0.02);
+            } else {
+                mybunny.position.copy(next);
             }
         }
         // keep on plane height
